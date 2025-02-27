@@ -203,10 +203,10 @@
     "featureLeads": {
       "phoneNumber": "6044444444",
       "dealerInventoryPageFr": {
-        "dealerInventoryPageUrl": "concessionnaire/20160628231700642/"
+        "dealerInventoryPageUrl": "{DealerPageURLHere}"
       },
       "dealerInventoryPageEn": {
-        "dealerInventoryPageUrl": "dealership/20160628231700642/"
+        "dealerInventoryPageUrl": "{DealerPageURLHere}"
       },
       "emailTopicId": {
         "topicIdLargeSmall": {
@@ -261,12 +261,12 @@
   "DealerData": {
     "dealerID": {
 
-      "dealerID1": "CT200431510441762",
-      "dealerID2": "CT2004715102134706",
-      "dealerID3": "20111011163940275",
-      "dealerWithAward": "20160609121357139",
-      "testDealer": "20120530142031065",
-      "nonDealer": "200412791811706"
+      "dealerID1": "{DealerIdHere}",
+      "dealerID2": "{DealerIdHere}",
+      "dealerID3": "{DealerIdHere}",
+      "dealerWithAward": "{DealerIdHere}",
+      "testDealer": "{DealerIdHere}",
+      "nonDealer": "{DealerIdHere}"
 
     },
     "feedbackMessageEn1": "Thank You !",

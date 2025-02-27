@@ -6,6 +6,8 @@ This test automation repository contains frontend and backend end to end (E2E) t
 
 **Execution Platform:** local, Browserstack
 
+**CI/CD:** Azure Devops
+
 ## 🛠 Backend Automation
 **Database Automation:**
 MS SQL Server automation (System.Data.Sqlclient)
@@ -19,3 +21,5 @@ Email Client API Automation (mailinator_cshart_client)
 
 **Payment Portal Automation:**
 Payment Client API Automation (stripe)
+
+**CI/CD:** Azure Devops

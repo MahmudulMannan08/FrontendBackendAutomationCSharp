@@ -26,8 +26,8 @@ namespace MarketPlaceWeb.Driver
         private readonly string testNameMacChrome = "MAC_CHROME_" + TestContext.CurrentContext.Test.Name;
         private readonly string testNameMacSafari = "MAC_SAFARI_" + TestContext.CurrentContext.Test.Name;        
         private readonly string testClassName = TestContext.CurrentContext.Test.ClassName;
-        private readonly string browserstackUser = "shah131"; //ConfigurationManager.AppSettings["browserstackUser"];
-        private readonly string browserstackAccessKey = "h4mrrEtVvJgtFVkqyA9h";//ConfigurationManager.AppSettings["browserstackPassword"];
+        private readonly string browserstackUser = "{BrowserstackUserHere}"; //ConfigurationManager.AppSettings["browserstackUser"];
+        private readonly string browserstackAccessKey = "{BrowserstackKeyHere}";//ConfigurationManager.AppSettings["browserstackPassword"];
 
         // MOBILE 
         public IWebDriver IOSSafariXS()
@@ -227,7 +227,7 @@ namespace MarketPlaceWeb.Driver
         {            
             var url = "https://api.browserstack.com/automate/builds.json?status=running";
             string encoded = Convert.ToBase64String(Encoding.GetEncoding("ISO-8859-1")
-                                           .GetBytes("shah131" + ":" + "h4mrrEtVvJgtFVkqyA9h"));
+                                           .GetBytes("{BrowserstackUserHere}" + ":" + "{BrowserstackKeyHere}"));
             var httpRequest = (HttpWebRequest)WebRequest.Create(url);
             httpRequest.Headers.Add("Authorization", "Basic " + encoded);
 

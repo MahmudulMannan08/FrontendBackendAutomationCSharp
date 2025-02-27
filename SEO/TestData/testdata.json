@@ -1,11 +1,4 @@
 ﻿{
-  "connectionStrings": {
-    "azrmdbqa1Statistic": "Server=azrmdbqa1.eastus.cloudapp.azure.com,65185; initial catalog=Statistic; uid=Dev_ReadOnly; pwd=u_wanna%(see); Connect Timeout=90; MultipleActiveResultSets=true;", //Need new QA DB public access with Read access for user
-    "azureStorageQatdrat": "DefaultEndpointsProtocol=https;AccountName=qatdrat;AccountKey=xcsRUYqjBGTL9CZ+0IV3b6ALheEp9g0pElYpJEKXt3Own+koMYs/AGxHmB+DTFQ9+PbrzFAkNwWJuLPfHZhIMA==;BlobEndpoint=https://qatdrat.blob.core.windows.net/;QueueEndpoint=https://qatdrat.queue.core.windows.net/;TableEndpoint=https://qatdrat.table.core.windows.net/;FileEndpoint=https://qatdrat.file.core.windows.net/;",
-    "azureStorageQatdrNotification": "DefaultEndpointsProtocol=https;AccountName=qatdrnotification;AccountKey=kzcPCTyuwtWS1KcREM8cJ/UYI8llUlc3ZzTtLBmBHhnkRxDXm6Lp0c5MNgtIuJ/HOodWHaVdILTxaJMHQiA4ew==;BlobEndpoint=https://qatdrnotification.blob.core.windows.net/;QueueEndpoint=https://qatdrnotification.queue.core.windows.net/;TableEndpoint=https://qatdrnotification.table.core.windows.net/;FileEndpoint=https://qatdrnotification.file.core.windows.net/;",
-    "azureStorageQatdrtbyb": "DefaultEndpointsProtocol=https;AccountName=qatdrtbyb;AccountKey=B/FOLBJFdjc4YF7V5ng+eCRoPqE6VoYXYVs4esg5X4Has3HKRxBO53hXDh2E+RRQVNN8zRSpOb/fgNtkhpFA8A==;EndpointSuffix=core.windows.net",
-    "azureStorageTdrcatqastorage": "DefaultEndpointsProtocol=https;AccountName=tdrcatqastorage;AccountKey=NT+dk1ku8idVxQImAJqGs387f2yKlIFTibi4cLWN5tTlbUSik6uND9861M50W3wgFQvVY4qVA84y+AStM76MxQ==;BlobEndpoint=https://tdrcatqastorage.blob.core.windows.net/;QueueEndpoint=https://tdrcatqastorage.queue.core.windows.net/;TableEndpoint=https://tdrcatqastorage.table.core.windows.net/;FileEndpoint=https://tdrcatqastorage.file.core.windows.net/;"
-  },
   "urlsEn": {
 
     "editorialHomePage": "editorial/",
@@ -86,21 +79,21 @@
 
   },
   "pageTitle": {
-    "editorialHomePageEn": "Car Reviews, Car Buying and Selling Advice, Automotive News | AutoTrader.ca",
-    "editorialHomePageFr": "Accueil | AutoHebdo.net",
-    "advicePageEn": "Consumer Advice | AutoTrader.ca",
-    "advicePageFr": "Conseils | AutoHebdo.net",
-    "expertReviewsEn": "Reviews | AutoTrader.ca",
-    "expertReviewsFr": "Essai routier | AutoHebdo.net",
-    "newsEn": "All Car News | AutoTrader.ca",
-    "newsFr": "Actualité automobile | AutoHebdo.net",
-    "coolStuffEn": "Cool Stuff | AutoTrader.ca",
-    "coolStuffFr": "Bon à savoir | AutoHebdo.net",
-    "videosEn": "Videos - Cars, Trucks and SUVs | AutoTraderTV | AutoTrader.ca",
-    "searchEn": "Search | AutoTrader.ca",
-    "searchFr": "Search | AutoHebdo.net",
-    "researchPageEn": "Vehicle Research - Canadian Car Prices, Features, Specs, Photos | AutoTrader.ca",
-    "researchPageFr": "Recherche de véhicules - Prix, caractéristiques, données techniques, photos | AutoHebdo.net",
+    "editorialHomePageEn": "Car Reviews, Car Buying and Selling Advice, Automotive News",
+    "editorialHomePageFr": "Accueil",
+    "advicePageEn": "Consumer Advice",
+    "advicePageFr": "Conseils",
+    "expertReviewsEn": "Reviews",
+    "expertReviewsFr": "Essai routier",
+    "newsEn": "All Car News",
+    "newsFr": "Actualité automobile",
+    "coolStuffEn": "Cool Stuff",
+    "coolStuffFr": "Bon à savoir",
+    "videosEn": "Videos - Cars, Trucks and SUVs",
+    "searchEn": "Search",
+    "searchFr": "Search",
+    "researchPageEn": "Vehicle Research - Canadian Car Prices, Features, Specs, Photos",
+    "researchPageFr": "Recherche de véhicules - Prix, caractéristiques, données techniques, photos",
     "evSRPEn": "New & Used {0} Vehicles for sale in Canada",
     "evSRPFr": "",
     "evSRPYearEn": "{0} {1} Vehicles for sale in Canada",

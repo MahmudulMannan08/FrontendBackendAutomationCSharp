@@ -1,11 +1,11 @@
 ﻿{
   "connectionStrings": {
-    "azrmdbqa1Statistic": "Server={DBServername}; initial catalog=Statistic; uid={userIdHere}; pwd={PasswordHere}; Connect Timeout=90; MultipleActiveResultSets=true;",
-    "sql-tdrcatqa01Cat": "server={DBServername};User ID={userIdHere};Password={PasswordHere}; MultipleActiveResultSets=true;",
-    "azureStorageQatdrat": "DefaultEndpointsProtocol=https;AccountName={StorageAccountNameHere};AccountKey={AccountKeyHere};BlobEndpoint={BlobEndPointHere};QueueEndpoint={QueueEndpointHere};TableEndpoint={TableEndPointHere};FileEndpoint={FileEndPointHere};",
-    "azureStorageQatdrNotification": "DefaultEndpointsProtocol=https;AccountName={StorageAccountNameHere};AccountKey={AccountKeyHere};BlobEndpoint={BlobEndPointHere};QueueEndpoint={QueueEndpointHere};TableEndpoint={TableEndPointHere};FileEndpoint={FileEndPointHere};",
-    "azureStorageQatdrtbyb": "DefaultEndpointsProtocol=https;AccountName={StorageAccountNameHere};AccountKey={AccountKeyHere};EndpointSuffix={EndpointSuffixHere}",
-    "azureStorageTdrcatqastorage": "DefaultEndpointsProtocol=https;AccountName={StorageAccountNameHere};AccountKey={AccountKeyHere};BlobEndpoint={BlobEndPointHere};QueueEndpoint={QueueEndpointHere};TableEndpoint={TableEndPointHere};FileEndpoint={FileEndPointHere};"
+    "{DbNameVar}": "Server={DBServername}; initial catalog=Statistic; uid={userIdHere}; pwd={PasswordHere}; Connect Timeout=90; MultipleActiveResultSets=true;",
+    "{DbNameVar2}": "server={DBServername};User ID={userIdHere};Password={PasswordHere}; MultipleActiveResultSets=true;",
+    "{StorageAccNameVar}": "DefaultEndpointsProtocol=https;AccountName={StorageAccountNameHere};AccountKey={AccountKeyHere};BlobEndpoint={BlobEndPointHere};QueueEndpoint={QueueEndpointHere};TableEndpoint={TableEndPointHere};FileEndpoint={FileEndPointHere};",
+    "{StorageAccNameVar2}": "DefaultEndpointsProtocol=https;AccountName={StorageAccountNameHere};AccountKey={AccountKeyHere};BlobEndpoint={BlobEndPointHere};QueueEndpoint={QueueEndpointHere};TableEndpoint={TableEndPointHere};FileEndpoint={FileEndPointHere};",
+    "{StorageAccNameVar3}": "DefaultEndpointsProtocol=https;AccountName={StorageAccountNameHere};AccountKey={AccountKeyHere};EndpointSuffix={EndpointSuffixHere}",
+    "{StorageAccNameVar4}": "DefaultEndpointsProtocol=https;AccountName={StorageAccountNameHere};AccountKey={AccountKeyHere};BlobEndpoint={BlobEndPointHere};QueueEndpoint={QueueEndpointHere};TableEndpoint={TableEndPointHere};FileEndpoint={FileEndPointHere};"
   },
   "restApi": {
     "featureMyVehicle": {

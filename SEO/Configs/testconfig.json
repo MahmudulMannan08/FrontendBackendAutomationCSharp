@@ -1,8 +1,5 @@
 {
-  //"TraderUrl": "https://beta.autotrader.ca",
- "TraderUrl": "https://beta.autohebdo.net",
-  //"TraderUrl": "https://www.autotrader.ca",
-  //"TraderUrl": "https://www.autohebdo.net",
+  "TraderUrl": "{WebsiteURLHere}",
   "Configuration": "local-chrome-large"
   //"Configuration": "local-chrome-xs"
   //"Configuration": "local-chrome-small"

@@ -1,0 +1,438 @@
+﻿{
+  "urlsEn": {
+
+    "editorialHomePage": "editorial/",
+    "advicePage": "editorial/advice/",
+    "carBuying": "editorial/advice/buying/",
+    "carSelling": "editorial/advice/selling/",
+    "ownerTips": "editorial/advice/owner/",
+    "expertReviews": "editorial/expert/",
+    "reviews": "editorial/expert/reviews/",
+    "newCarPreviews": "editorial/expert/previews/",
+    "carComparisons": "editorial/expert/comparison-tests/",
+    "usedCarReviews": "editorial/expert/used-car-reviews/",
+    "carProductReviews": "editorial/expert/products-reviews/",
+    "news": "editorial/news/",
+    "coolStuff": "editorial/cool/",
+    "videos": "editorial/autotradertv/",
+    "search": "editorial/search/",
+    "funStuff": "editorial/cool/fun-stuff/",
+    "carTech": "editorial/cool/car-tech/",
+    "popCulture": "editorial/cool/pop-culture/",
+    "adventure": "editorial/cool/adventure/",
+    "opinions": "editorial/cool/opinions/",
+    "researchPage": "research/",
+    "researchComparisonPage": "research/comparison",
+    "srp": "cars/",
+    "suvSRP": "suv/",
+    "sedanSRP": "sedan/",
+    "truckSRP": "truck/",
+    "hatchbackSRP": "hatchback/",
+    "convertibleSRP": "convertible/",
+    "minivanSRP": "minivan/",
+    "coupeSRP": "coupe/",
+    "wagonSRP": "wagon/",
+    "dealers": "dealership/",
+    "dealerAwards": "dealerawards/",
+    "greenSRP": "electric%20vehicles/",
+    "electricSRP": "electric%20cars/",
+    "hybridSRP": "hybrid%20cars/"
+
+  },
+  "urlsFr": {
+    "editorialHomePage": "editorial/",
+    "advicePage": "editorial/conseils/",
+    "carBuying": "editorial/conseils/astuces-pour-acheter/",
+    "carSelling": "editorial/conseils/astuces-pour-vendre/",
+    "ownerTips": "editorial/conseils/astuces-pour-dentretien/",
+    "expertReviews": "editorial/essai-routier/",
+    "reviews": "editorial/essai-routier/avis-dexpert/",
+    "newCarPreviews": "editorial/essai-routier/avant-premiere/",
+    "carComparisons": "editorial/essai-routier/comparaison/",
+    "usedCarReviews": "editorial/essai-routier/essai-routier-usage/",
+    "carProductReviews": "editorial/essai-routier/evaluation-daccessoire/",
+    "news": "editorial/actualite-automobile/",
+    "coolStuff": "editorial/bon-a-savoir/",
+    "videos": "editorial/videos/",
+    "search": "editorial/search/",
+    "funStuff": "editorial/bon-a-savoir/insolite/",
+    "carTech": "editorial/bon-a-savoir/technologie-automobile/",
+    "popCulture": "editorial/bon-a-savoir/culture-pop/",
+    "adventure": "editorial/bon-a-savoir/aventure/",
+    "opinions": "editorial/bon-a-savoir/opinions/",
+    "researchPage": "recherche/",
+    "researchComparisonPage": "recherche/comparaison",
+    "srp": "autos/",
+    "suvSRP": "vus/",
+    "sedanSRP": "berline/",
+    "truckSRP": "camion/",
+    "hatchbackSRP": "hatchback/",
+    "convertibleSRP": "cabriolet/",
+    "minivanSRP": "fourgonnettes/",
+    "coupeSRP": "coupe/",
+    "wagonSRP": "familiale/",
+    "dealers": "concessionnaire/",
+    "dealerAwards": "RecompensesCommercants/",
+    "greenSRP": "vehicules%20electriques/",
+    "electricSRP": "?fuel=%C3%89lectrique",
+    "hybridSRP": "?fuel=Hybride%20essence%2F%C3%A9lectrique"
+
+  },
+  "pageTitle": {
+    "editorialHomePageEn": "Car Reviews, Car Buying and Selling Advice, Automotive News | AutoTrader.ca",
+    "editorialHomePageFr": "Accueil | AutoHebdo.net",
+    "advicePageEn": "Consumer Advice | AutoTrader.ca",
+    "advicePageFr": "Conseils | AutoHebdo.net",
+    "expertReviewsEn": "Reviews | AutoTrader.ca",
+    "expertReviewsFr": "Essai routier | AutoHebdo.net",
+    "newsEn": "All Car News | AutoTrader.ca",
+    "newsFr": "Actualité automobile | AutoHebdo.net",
+    "coolStuffEn": "Cool Stuff | AutoTrader.ca",
+    "coolStuffFr": "Bon à savoir | AutoHebdo.net",
+    "videosEn": "Videos - Cars, Trucks and SUVs | AutoTraderTV | AutoTrader.ca",
+    "searchEn": "Search | AutoTrader.ca",
+    "searchFr": "Search | AutoHebdo.net",
+    "researchPageEn": "Vehicle Research - Canadian Car Prices, Features, Specs, Photos | AutoTrader.ca",
+    "researchPageFr": "Recherche de véhicules - Prix, caractéristiques, données techniques, photos | AutoHebdo.net",
+    "evSRPEn": "New & Used {0} Vehicles for sale in Canada",
+    "evSRPFr": "",
+    "evSRPYearEn": "{0} {1} Vehicles for sale in Canada",
+    "evSRPYearFr": "",
+    "evSRPYearProvEn": "{0} {1} Vehicles for sale in Ontario",
+    "evSRPYearProvFr": "",
+    "evSRPYearProvCityEn": "{0} {1} Vehicles for sale in Barrie",
+    "evSRPYearProvCityFr": "",
+    "evSRPYearRangeProvCityEn": "",
+    "evSRPYearRangeProvCityFr": ""
+
+  },
+  "linkTextEn": {
+
+    "filterByAll": "All",
+    "filterByCarBuyingTips": "Car Buying Tips",
+    "filterByCarSellingTips": "Car Selling Tips",
+    "filterByOwnerTips": "Owners Tips",
+    "filterByExpertReviews": "Expert Reviews",
+    "filterByNewCarPreviews": "New Car Previews",
+    "filterByCarComparisons": "Car Comparisons",
+    "filterByUsedCarReviews": "Used Car Reviews",
+    "filterByCarProductReviews": "Car Product Reviews",
+    "filterByFunStuff": "Fun Stuff",
+    "filterByCarTech": "Car Tech",
+    "filterByPopCulture": "Pop Culture",
+    "filterByAdventure": "Adventure",
+    "filterByOpinions": "Opinions"
+
+  },
+  "linkTextFr": {
+
+    "filterByAll": "Tout",
+    "filterByCarBuyingTips": "Astuces pour acheter",
+    "filterByCarSellingTips": "Astuces pour vendre",
+    "filterByOwnerTips": "Astuces d'entretien",
+    "filterByExpertReviews": "Avis d'expert",
+    "filterByNewCarPreviews": "Avant-première",
+    "filterByCarComparisons": "Comparaison",
+    "filterByUsedCarReviews": "Essai routier - usagé",
+    "filterByCarProductReviews": "Évaluation d'accessoire",
+    "filterByFunStuff": "Insolite",
+    "filterByCarTech": "Technologie automobile",
+    "filterByPopCulture": "Culture Pop",
+    "filterByAdventure": "Aventure",
+    "filterByOpinions": "Opinions"
+
+  },
+
+  "LocalSRPLinksEn": {
+    "suv": { "Barrie": "suv/on/barrie/" },
+    "sedan": { "Barrie": "sedan/on/barrie/" },
+    "truck": { "Barrie": "truck/on/barrie/" },
+    "minivan": { "Barrie": "minivan/on/barrie/" },
+    "wagon": { "Barrie": "wagon/on/barrie/" },
+    "convertible": { "Barrie": "convertible/on/barrie/" },
+    "hatchback": { "Barrie": "hatchback/on/barrie/" },
+    "coupe": { "Barrie": "coupe/on/barrie/" }
+
+  },
+  "LocalSRPLinksFr": {
+    "suv": { "Alma": "vus/qc/alma/" },
+    "sedan": { "Alma": "berline/qc/alma/" },
+    "truck": { "Alma": "camion/qc/alma/" },
+    "minivan": { "Alma": "fourgonnettes/qc/alma/" },
+    "wagon": { "Alma": "familiale/qc/alma/" },
+    "convertible": { "Alma": "cabriolet/qc/alma/" },
+    "hatchback": { "Alma": "hatchback/qc/alma/" },
+    "coupe": { "Alma": "coupe/qc/alma/" }
+
+  },
+
+  "LocationLinks": {
+    "province": "on",
+    "provinceTitle": "Ontario",
+    "defaultLocation": "Canada",
+    "city": "Kitchener",
+    "city1": "Barrie",
+    "postalCode": "N2A 0K7"
+  },
+  "yearRangeData": {
+    "year1": "2023",
+    "year2": "2022",
+    "year3": "2021",
+    "year4": "2020",
+    "year5": "2019"
+  },
+  "commonTestData": {
+    "conditionEn": {
+      "condition1": "New",
+      "condition2": "Certified Pre-Owned",
+      "condition3": "Used",
+      "condition4": "Damaged"
+    },
+    "conditionFr": {
+      "condition1": "Neuf",
+      "condition2": "Véhicules Certifiés",
+      "condition3": "Occasion",
+      "condition4": "Endommagé"
+    },
+    "fuelTypeEn": {
+      "fuelType1": "Electric",
+      "fuelType2": "Gas/Electric Hybrid"
+    },
+    "fuelTypeFr": {
+      "fuelType1": "Électrique",
+      "fuelType2": "Hybride essence/électrique"
+    }
+  },
+  "YearMakeModelData": {
+    "ymm": {
+      "make": "Toyota",
+      "model": "Rav4",
+      "year": "2021"
+    },
+    "ymm1": {
+      "make": "Honda",
+      "model": "Civic",
+      "year": "2020"
+    },
+    "ymm2": {
+      "make": "Ford",
+      "model": "F-150",
+      "year": "2022"
+    },
+    "ymm3": {
+      "make": "Hyundai",
+      "model": "Elantra",
+      "year": "2021"
+    },
+    "ymm4": {
+      "make": "Cadillac",
+      "model": "CT5",
+      "year": "2022"
+    },
+    "ymm5": {
+      "make": "Acura",
+      "model": "TLX",
+      "year": "2023"
+    },
+    "ymm7": {
+      "make": "Honda",
+      "model": "Civic",
+      "year": "2017"
+    },
+    "ymm6": {
+      "make": "Subaru"
+
+    }
+  },
+  "DealerData": {
+    "dealerID": {
+
+      "dealerID1": "CT200431510441762",
+      "dealerID2": "CT2004715102134706",
+      "dealerID3": "20111011163940275",
+      "dealerWithAward": "20160609121357139",
+      "testDealer": "20120530142031065",
+      "nonDealer": "200412791811706"
+
+    },
+    "feedbackMessageEn1": "Thank You !",
+    "feedbackMessageFr1": "Merci !",
+    "feedbackMessageEn2": "Your inquiry has been sent.",
+    "feedbackMessageFr2": "Votre demande a été transmise.",
+    "phoneNumber": "6044444444"
+  },
+
+  "ArticleUrlsEn": {
+    "ReviewArticle": "editorial/20240410/2024-mercedes-benz-gls-class-review-and-video/",
+    "NewsArticle": "editorial/20230315/3-row-2024-kia-ev9-electric-suv-debuts/",
+    "ComparisonArticle": "editorial/20230118/2023-genesis-g80-electrified-vs-2022-volvo-s90-recharge-comparison-test/"
+  },
+  "ArticleUrlsFr": {
+    "ReviewArticle": "editorial/20230323/nissan-ariya-e-4orce-2023-premier-essai/",
+    "NewsArticle": "editorial/20230316/le-mercedes-benz-gla-revise-pour-2024/",
+    "ComparisonArticle": "editorial/20221122/kia-sportage-hev-2023-vs-toyota-rav4-hybride-2022-match-comparatif/"
+  },
+  "IntroDescFr": {
+    "YMM": "Vous recherchez une Cadillac CT5 de 2022 ? Laissez-nous vous aider. Trouvez votre prochaine voiture en parcourant notre vaste gamme de voitures neuves et d'occasion Cadillac CT5 de 2022 des concessionnaires locaux Cadillac et des vendeurs privés. Vous pouvez également comparer les prix, les spécifications de finition, les options, les avis, les notes et l'historique des rappels des Cadillac CT5 de 2022 avec d'autres véhicules similaires. Lisez-en davantage sur Cadillac CT5 2022",
+    "MM": "Vous recherchez une Cadillac CT5 ? Laissez-nous vous aider. Trouvez votre prochaine voiture en parcourant notre vaste inventaire de Cadillac CT5 neuves et d'occasion des concessionnaires locaux Cadillac et des vendeurs privés. Vous pouvez également comparer les prix, les spécifications de finition, les options, les avis, les notes et l'historique des rappels de la Cadillac CT5 de différentes années avec d'autres véhicules similaires. Lisez-en davantage sur Cadillac CT5",
+    "Make": "Vous cherchez un véhicule de Cadillac ? Laissez-nous vous aider. Trouvez votre prochaine voiture en parcourant notre vaste inventaire de voitures neuves et d'occasion Cadillac provenant de concessionnaires locaux Cadillac et de vendeurs privés. Vous pouvez également comparer les prix, les spécifications de finition, les options, les avis, les notes et l'historique de chaque modèle Cadillac avec d'autres véhicules similaires. Lisez-en davantage sur Cadillac",
+    "GeneralSRP": "Vous n'êtes pas sûr de ce que vous recherchez? Laissez-nous vous aider. Trouvez votre prochaine voiture, camion ou VUS en parcourant notre vaste inventaire de véhicules neufs et d'occasion provenant de concessionnaires locaux et de vendeurs privés. Vous pouvez également comparer les prix, les spécifications de finition, les options, les avis, les notes et l'historique des rappels de chaque véhicule.",
+    "GeneralBodytypeSRP": "Vous cherchez {0}? Laissez-nous vous aider. Trouvez votre prochain véhicule en parcourant notre vaste inventaire de {0} neufs et d'occasion provenant de concessionnaires locaux et de vendeurs privés. Vous pouvez également comparer les prix, les spécifications de finition, les options, les avis, les notes et l'historique des rappels de chaque ligne de carrosserie.",
+
+    "EVSRP": "Vous cherchez un véhicule vert? Laissez-nous vous aider. Trouvez votre prochain véhicule en parcourant notre vaste inventaire de véhicules électriques et hybrides neufs et d'occasion provenant de concessionnaires locaux et de vendeurs privés. Vous pouvez également comparer les prix, les spécifications de finition, les options, les avis, les notes et l'historique des rappels de chaque véhicule électrique et hybride.",
+    "ElectricSRP": "Vous cherchez un véhicule électrique? Laissez-nous vous aider. Trouvez votre prochain véhicule en parcourant notre vaste inventaire de véhicules électriques neufs et d'occasion provenant de concessionnaires locaux et de vendeurs privés. Vous pouvez également comparer les prix, les spécifications de finition, les options, les avis, les notes et l'historique des rappels de chaque véhicule électrique.",
+    "HybridSRP": "Vous cherchez un véhicule hybride? Laissez-nous vous aider. Trouvez votre prochain véhicule en parcourant notre vaste inventaire de véhicules hybrides neufs et d'occasion provenant de concessionnaires locaux et de vendeurs privés. Vous pouvez également comparer les prix, les spécifications de finition, les options, les avis, les notes et l'historique des rappels de chaque véhicule hybride.",
+    "GreenBodyTypeSRP": "Vous cherchez un {0} vert? Laissez-nous vous aider. Trouvez votre prochain véhicule en parcourant notre vaste inventaire de {0} électriques et hybrides neufs et d'occasion provenant de concessionnaires locaux et de vendeurs privés. Vous pouvez également comparer les prix, les spécifications de finition, les options, les avis, les notes et l'historique des rappels de chaque ligne électrique et hybride.",
+    "ElectricBodyTypeSRP": "Vous cherchez un {0} électrique? Laissez-nous vous aider. Trouvez votre prochain véhicule en parcourant notre vaste inventaire de {0} électriques neufs et d'occasion provenant de concessionnaires locaux et de vendeurs privés. Vous pouvez également comparer les prix, les spécifications de finition, les options, les avis, les notes et l'historique des rappels de chaque ligne électrique.",
+    "HybridBodyTypeSRP": "Vous cherchez un {0} hybride? Laissez-nous vous aider. Trouvez votre prochain véhicule en parcourant notre vaste inventaire de {0} hybrides neufs et d'occasion provenant de concessionnaires locaux et de vendeurs privés. Vous pouvez également comparer les prix, les spécifications de finition, les options, les avis, les notes et l'historique des rappels de chaque ligne hybride."
+  },
+  "IntroDescEn": {
+    "YMM": "Looking for a 2022 Cadillac CT5? Let us help you. Find your next car by browsing our extensive new and pre-owned 2022 Cadillac CT5 from local Cadillac dealerships and private sellers. You can also compare prices, trim specifications, options, reviews, scores and recall history of 2022 Cadillac CT5 with other similar vehicles. Research more about the 2022 Cadillac CT5",
+    "MM": "Looking for a Cadillac CT5? Let us help you. Find your next car by browsing our extensive new and pre-owned Cadillac CT5 inventory from local Cadillac dealerships and private sellers. You can also compare prices, trim specifications, options, reviews, scores and recall history of Cadillac CT5 of different years with other similar vehicles. Research more about the Cadillac CT5",
+    "Make": "Looking for a Cadillac vehicle? Let us help you. Find your next car by browsing our extensive new and pre-owned Cadillac inventory from local Cadillac dealerships and private sellers. You can also compare prices, trim specifications, options, reviews, scores and recall history of every Cadillac model with other similar vehicles. Research more about the Cadillac",
+    "GeneralSRP": "Not sure what you are looking for? Let us help you. Find your next car, truck or SUV by browsing our extensive new and pre-owned inventory from local dealerships and private sellers. You can also compare prices, trim specifications, options, reviews, scores and recall history of every vehicle.",
+    "GeneralBodytypeSRP": "Looking for a {0}? Let us help you. Find your next vehicle by browsing our extensive new and pre-owned {0} inventory from local dealerships and private sellers. You can also compare prices, trim specifications, options, reviews, scores and recall history of every bodystyle.",
+
+
+    "EVSRP": "Looking for a Green vehicle? Let us help you. Find your next vehicle by browsing our extensive new and pre-owned electric and hybrid vehicle inventory from local dealerships and private sellers. You can also compare prices, trim specifications, options, reviews, scores and recall history of every electric and hybrid vehicle.",
+    "ElectricSRP": "Looking for an electric vehicle? Let us help you. Find your next vehicle by browsing our extensive new and pre-owned electric vehicle inventory from local dealerships and private sellers. You can also compare prices, trim specifications, options, reviews, scores and recall history of every electric vehicle.",
+    "HybridSRP": "Looking for a hybrid vehicle? Let us help you. Find your next vehicle by browsing our extensive new and pre-owned hybrid vehicle inventory from local dealerships and private sellers. You can also compare prices, trim specifications, options, reviews, scores and recall history of every hybrid vehicle.",
+    "GreenBodyTypeSRP": "Looking for a Green {0}? Let us help you. Find your next vehicle by browsing our extensive new and pre-owned electric and hybrid {0} inventory from local dealerships and private sellers. You can also compare prices, trim specifications, options, reviews, scores and recall history of every electric and hybrid bodystyle.",
+    "ElectricBodyTypeSRP": "Looking for an electric {0}? Let us help you. Find your next vehicle by browsing our extensive new and pre-owned electric {0} inventory from local dealerships and private sellers. You can also compare prices, trim specifications, options, reviews, scores and recall history of every electric bodystyle.",
+    "HybridBodyTypeSRP": "Looking for a hybrid {0}? Let us help you. Find your next vehicle by browsing our extensive new and pre-owned hybrid {0} inventory from local dealerships and private sellers. You can also compare prices, trim specifications, options, reviews, scores and recall history of every hybrid bodystyle."
+  },
+  "PopularCarsTitleEn": {
+    "GeneralSRP": "Here are some popular {0} in {1} right now",
+    "PopularCarsModels": "Ford F-150,Ford Mustang,Honda Civic,Honda CR-V,Mazda CX-5,Toyota RAV4",
+    "PopularSUVModels": "Ford Escape,Honda CR-V,Hyundai Kona,Mazda CX-5,Nissan Rogue,Toyota RAV4",
+    "PopularSedanModels": "BMW 3 Series,Honda Civic,Hyundai Elantra,Toyota Camry,Toyota Corolla,Volkswagen Jetta",
+    "PopularConvertiblesModels": "BMW Z4,Chevrolet Corvette,Ford Mustang,Mazda MX-5,Porsche 718 Boxster,Porsche 911",
+    "PopularCoupeModels": "BMW 2 Series,Chevrolet Camaro,Chevrolet Corvette,Ford Mustang,Porsche 911,Subaru BRZ",
+    "PopularMinivanModels": "Chrysler Grand Caravan,Chrysler Pacifica,Dodge Grand Caravan,Honda Odyssey,Kia Carnival,Toyota Sienna",
+    "PopularHatchbackModels": "Chevrolet Spark,Honda Civic Hatchback,Kia Rio 5-Door,Mazda Mazda3,Toyota Corolla Hatchback,Volkswagen Golf",
+    "PopularTruckModels": "Chevrolet Silverado 1500,Ford F-150,Ford Ranger,GMC sierra 1500,RAM 1500,Toyota Tacoma",
+    "PopularWagonModels": "Chevrolet Silverado 1500,Ford F-150,Ford Ranger,GMC sierra 1500,RAM 1500,Toyota Tacoma"
+  },
+  "PopularCarsTitleFr": {
+    "GeneralSRP": "{0} les plus populaires au {1} en ce moment"
+  },
+  "PopularCarsUrlsEn": {
+    "FordF-150": "ford/f-150/",
+    "FordMustang": "ford/mustang/",
+    "HondaCivic": "honda/civic/",
+    "HondaCR-V": "honda/cr-v/",
+    "MazdaCX-5": "mazda/cx-5/",
+    "ToyotaRAV4": "toyota/rav4/"
+  },
+  "PopularConvertiblesUrlsEn": {
+    "BMWZ4": "bmw/z4/",
+    "ChevroletCorvette": "chevrolet/corvette/",
+    "FordMustang": "ford/mustang/",
+    "MazdaMX-5": "mazda/mx-5/",
+    "Porsche718Boxster": "porsche/718%20boxster/",
+    "Porsche911": "porsche/911/"
+  },
+  "PopularCoupeUrlsEn": {
+    "BMW2Series": "bmw/2%20series/",
+    "ChevroletCamaro": "chevrolet/camaro/",
+    "ChevroletCorvette": "chevrolet/corvette/",
+    "FordMustang": "ford/mustang/",
+    "Porsche911": "porsche/911/",
+    "SubaruBRZ": "subaru/brz/"
+  },
+  "PopularHatchabackUrlsEn": {
+    "ChevroletSpark": "chevrolet/spark/",
+    "HondaCivicHatchback": "honda/civic%20hatchback/",
+    "KiaRio5-Door": "kia/rio%205-door/",
+    "MazdaMazda3": "mazda/mazda3/",
+    "ToyotaCorollaHatchback": "toyota/corolla%20hatchback/",
+    "VolkswagenGolf": "volkswagen/golf/"
+  },
+  "PopularMinivanUrlsEn": {
+    "ChryslerGrandCaravan": "chrysler/grand%20caravan/",
+    "ChryslerPacifica": "chrysler/pacifica/",
+    "DodgeGrandCaravan": "dodge/grand%20caravan/",
+    "HondaOdyssey": "honda/odyssey/",
+    "KiaCarnival": "kia/carnival/",
+    "ToyotaSienna": "toyota/sienna/"
+  },
+  "PopularOtherCarUrlsEn": {
+
+  },
+  "PopularSedanUrlsEn": {
+    "BMW3Series": "bmw/3%20series/",
+    "HondaCivic": "honda/civic/",
+    "HyundaiElantra": "hyundai/elantra/",
+    "ToyotaCamry": "toyota/camry/",
+    "ToyotaCorolla": "toyota/corolla/",
+    "VolkswagenJetta": "volkswagen/jetta/"
+  },
+  "PopularSUVUrlsEn": {
+    "FordEscape": "ford/escape/",
+    "HondaCR-V": "honda/cr-v/",
+    "HyundaiKona": "hyundai/kona/",
+    "MazdaCX-5": "mazda/cx-5/",
+    "NissanRogue": "nissan/rogue/",
+    "ToyotaRAV4": "toyota/rav4/"
+  },
+  "PopularTruckUrlsEn": {
+    "ChevroletSilverado1500": "chevrolet/silverado%201500/",
+    "FordF-150": "ford/f-150/",
+    "FordRanger": "ford/ranger/",
+    "GMCsierra1500": "gmc/sierra%201500/",
+    "RAM1500": "ram/1500/",
+    "ToyotaTacoma": "toyota/tacoma/"
+  },
+  "PopularWagonUrlsEn": {
+    "ChevroletSilverado1500": "chevrolet/silverado%201500/",
+    "FordF-150": "ford/f-150/",
+    "FordRanger": "ford/ranger/",
+    "GMCsierra1500": "gmc/sierra%201500/",
+    "RAM1500": "ram/1500/",
+    "ToyotaTacoma": "toyota/tacoma/"
+  },
+  "conditionEn": {
+    "condition1": "New",
+    "condition2": "Certified Pre-Owned",
+    "condition3": "Used",
+    "condition4": "Damaged"
+  },
+  "conditionFr": {
+    "condition1": "Neuf",
+    "condition2": "Véhicules Certifiés",
+    "condition3": "Occasion",
+    "condition4": "Endommagé"
+  },
+  "BodyTypesEn": {
+    "general": "cars",
+    "suv": "suvs",
+    "sedan": "sedans",
+    "truck": "trucks",
+    "minivan": "minivans",
+    "hatchback": "hatchbacks",
+    "coupe": "coupes",
+    "convertible": "convertibles",
+    "wagon": "wagons"
+  },
+  "BodyTypesFr": {
+    "general": "Autos",
+    "suv": "VUS",
+    "sedan": "Berline",
+    "truck": "Camion",
+    "minivan": "Minifourgonnette Ou Fourgonnette",
+    "hatchback": "Hatchback",
+    //"hatchback": "Hayon",
+    "coupe": "Coupé",
+    "convertible": "Décapotable Ou Cabriolet",
+    "wagon": "Familiale"
+  },
+  "bodyTypeEn": {
+    "bodyType1": "Coupe",
+    "bodyType2": "Other/Don't Know"
+  },
+  "bodyTypeFr": {
+    "bodyType1": "Coupé",
+    "bodyType2": "Autre / Je ne sais pas"
+  }
+}
+

@@ -1,0 +1,447 @@
+﻿{
+  "urls": {
+    "srpUrlPvEn": "cars/?rcp=15&rcs=0&srt=3&prx=100&loc=M4R1B9&hprc=True&wcp=True&sts=New-Used&inMarket=advancedSearch",
+    "srpUrlPvFr": "autos/?rcp=15&rcs=0&srt=11&prx=100&loc=C0A%201S0&hprc=True&wcp=True&inMarket=advancedSearch",
+    "srpUrlHeavyTrucksEn": "heavy-trucks/all/?rcp=15&rcs=0&srt=3&prx=100&loc=M4R1B9&hprc=False&wcp=False&sts=New-Used&showcpo=1&inMarket=advancedSearch",
+    "srpUrlHeavyTrucksFr": "camion-lourd/all/?rcp=15&rcs=0&srt=3&prx=100&loc=M4R1B9&hprc=False&wcp=False&sts=Neuf-Occasion&inMarket=advancedSearch",
+    "srpUrlRvEn": "rv/all/?rcp=15&rcs=0&srt=3&prx=100&loc=M4R1B9&hprc=False&wcp=False&sts=New-Used&showcpo=1&inMarket=advancedSearch",
+    "srpUrlRvFr": "vr/all/on/?rcp=15&rcs=0&srt=3&prx=-2&prv=Ontario&loc=M4R1B9&hprc=False&wcp=False&sts=Neuf-Occasion&showcpo=1&inMarket=advancedSearch",
+    "srpUrlRBoatsEn": "boats/all/all/on/?rcp=0&rcs=0&srt=3&prx=100&prv=Ontario&loc=M4R1B9&hprc=False&wcp=False&sts=New-Used&inMarket=basicSearch&showcpo=1",
+    "srpUrlRBoatsFr": "bateau/all/all/?rcp=15&rcs=0&srt=3&prx=100&loc=M4R1B9&hprc=False&wcp=False&sts=Neuf-Occasion&showcpo=1&inMarket=advancedSearch",
+    "srpUrlWatercraftEn": "watercraft/?rcp=15&rcs=0&srt=3&prx=100&loc=M4R1B9&hprc=False&wcp=False&sts=New-Used&showcpo=1&inMarket=advancedSearch",
+    "srpUrlWatercraftFr": "motomarine/?rcp=15&rcs=0&srt=3&prx=100&loc=M4R%201B9&hprc=False&wcp=False&sts=Neuf-Occasion&showcpo=1&inMarket=advancedSearch",
+    "srpUrlBikesEn": "motorcycles-atvs/all/on/?rcp=0&rcs=0&srt=3&prx=100&prv=Ontario&loc=M4R1B9&hprc=False&wcp=False&sts=New-Used&inMarket=basicSearch&showcpo=1",
+    "srpUrlBikesFr": "motos-vtts/all/?rcp=15&rcs=0&srt=3&prx=100&loc=M4R1B9&hprc=False&wcp=False&sts=Neuf-Occasion&inMarket=advancedSearch",
+    "vdpGenericEn": "cars/?rcp=15&rcs=0&srt=3&prx=-1&loc=Burnaby&hprc=True&wcp=True&sts=New-Used&inMarket=advancedSearch",
+    "vdpGenericFr": "autos/?rcp=15&rcs=0&srt=3&prx=-1&loc=Burnaby&hprc=True&wcp=True&sts=Neuf-Occasion&inMarket=advancedSearch",
+
+    "directLinkUrls": {
+      "makeModelTrimYearPriceUrlEn": "cars/honda/cr-v/?rcp=15&rcs=0&srt=3&trim=LX&yRng=2003%2C2020&pRng=10000%2C50000&prx=-1&loc=M4R1B9&hprc=True&wcp=True&sts=New-Used&inMarket=advancedSearch",
+      "makeModelTrimYearPriceUrlFr": "autos/honda/cr-v/?rcp=15&rcs=0&srt=3&trim=LX&yRng=2003%2C2020&pRng=10000%2C50000&prx=-1&loc=M4R1B9&hprc=True&wcp=True&sts=Neuf-Occasion&inMarket=advancedSearch",
+      "locDisTrmBodyExtClrDrvtrnFuelEngTrnsSeatDoorsUrlEn": "cars/on/toronto/?rcp=15&rcs=0&srt=3&prx=1000&prv=Ontario&loc=M4R1B9&clr=Black&body=SUV&fuel=Gasoline&trans=Automatic&hprc=True&wcp=True&sts=New-Used&dtn=Four%20Wheel%20Drive&eng=6%20Cylinder&scpty=5%20seats&nod=4%2B%20Door&inMarket=advancedSearch",
+      "locDisTrmBodyExtClrDrvtrnFuelEngTrnsSeatDoorsUrlFr": "autos/on/toronto/?rcp=15&rcs=0&srt=3&prx=1000&prv=Ontario&loc=M4R1B9&clr=Noir&body=VUS&fuel=Essence&trans=Automatique&hprc=True&wcp=True&sts=Neuf-Occasion&dtn=4%20roues%20motrices&eng=6%20cylindres&scpty=5%20places&nod=4%20portes%20et%20%2B&inMarket=advancedSearch",
+      "lengthWeightSleepsSlideOutsUrlEn": "rv/all/?rcp=15&rcs=0&srt=3&lfRng=10%2C150&wRng=500%2C20000&prx=-1&loc=M4R%201B9&hprc=False&wcp=False&sts=New-Used&showcpo=1&slp=4&slo=2&inMarket=advancedSearch",
+      "lengthWeightSleepsSlideOutsUrlFr": "vr/all/?rcp=15&rcs=0&srt=3&lfRng=10%2C150&wRng=500%2C20000&prx=-1&loc=M4R%201B9&hprc=False&wcp=False&sts=Neuf-Occasion&showcpo=1&slp=4&slo=2&inMarket=advancedSearch",
+      "hoursAndSubTypeUrlEn": "boats/all/jet%20boat/?rcp=15&rcs=0&srt=3&nohRng=100%2C2000&prx=-1&loc=M4R1B9&hprc=False&wcp=False&sts=New-Used&showcpo=1&inMarket=advancedSearch",
+      "hoursAndSubTypeUrlFr": "bateau/all/bateau%20%c3%a0%20tuy%c3%a8re/?rcp=15&rcs=0&srt=3&nohRng=100%2C2000&prx=-1&loc=M4R1B9&hprc=False&wcp=False&sts=Neuf-Occasion&showcpo=1&inMarket=advancedSearch",
+      "horsepowerUrlEn": "watercraft/?rcp=15&rcs=0&srt=3&shp=100%2C5000&prx=-1&loc=M4R%201B9&hprc=False&wcp=False&sts=New-Used&showcpo=1&inMarket=advancedSearch",
+      "horsepowerUrlFr": "motomarine/?rcp=15&rcs=0&srt=3&shp=100%2C5000&prx=-1&loc=M4R%201B9&hprc=False&wcp=False&sts=Neuf-Occasion&showcpo=1&inMarket=advancedSearch",
+      "engineSizeUrlEn": "motorcycles-atvs/all/?rcp=15&rcs=0&srt=3&sesRng=100%2C500&prx=-1&loc=M4R%201B9&hprc=False&wcp=False&sts=New-Used&showcpo=1&inMarket=advancedSearch",
+      "engineSizeUrlFr": "motos-vtts/all/?rcp=15&rcs=0&srt=3&sesRng=100%2C500&prx=-1&loc=M4R%201B9&hprc=False&wcp=False&sts=Neuf-Occasion&showcpo=1&inMarket=advancedSearch"
+    }
+  },
+  "commonTestData": {
+    "conditionEn": {
+      "condition1": "New",
+      "condition2": "Certified Pre-Owned",
+      "condition3": "Used",
+      "condition4": "Damaged"
+    },
+    "conditionFr": {
+      "condition1": "Neuf",
+      "condition2": "Véhicules Certifiés",
+      "condition3": "Occasion",
+      "condition4": "Endommagé"
+    },
+    "fuelTypeEn": {
+      "fuelType1": "Gasoline",
+      "fuelType2": "Gas/Electric Hybrid"
+    },
+    "fuelTypeFr": {
+      "fuelType1": "Gaz naturel",
+      "fuelType2": "Hybride essence/électrique"
+    }
+  },
+  "5291": {
+    "make": "Honda",
+    "model": "Civic",
+    "trim": {
+      "trim1": "DX-G",
+      "trim2": "SE",
+      "trim3": "Touring"
+    }
+  },
+  "5292": {
+    "minYear": "2010",
+    "maxYear": "2018"
+  },
+  "5287": {
+    "minPrice": "5000",
+    "maxPrice": "10000"
+  },
+  "5290": {
+    "minPayment": "100",
+    "maxPayment": "200",
+    "downPayment": "2000",
+    "tradeInValue": "1000"
+  },
+  "5293": {
+    "bodyTypeEn": {
+      "bodyType1": "Coupe",
+      "bodyType2": "Other/Don't Know"
+    },
+    "bodyTypeFr": {
+      "bodyType1": "Coupé",
+      "bodyType2": "Autre / Je ne sais pas"
+    }
+  },
+  "5294": {
+    "exteriorColourEn": {
+      "colour1": "Black",
+      "colour2": "Dark Grey",
+      "colour3": "Silver"
+    },
+    "exteriorColourFr": {
+      "colour1": "Noir",
+      "colour2": "Gris foncé",
+      "colour3": "Argent"
+    }
+  },
+  "5295": {
+    "minMileage": "2000",
+    "maxMileage": "600000"
+  },
+  "5296": {
+    "drivetrainEn": {
+      "drivetrain1": "All Wheel Drive",
+      "drivetrain2": "Front Wheel Drive"
+    },
+    "drivetrainFr": {
+      "drivetrain1": "4 roues motrices",
+      "drivetrain2": "Traction avant"
+    }
+  },
+  "5300": {
+    "seatingCapacityEn": {
+      "seatingCapacity1": "4 seats",
+      "seatingCapacity2": "5 seats"
+    },
+    "seatingCapacityFr": {
+      "seatingCapacity1": "4 places",
+      "seatingCapacity2": "5 places"
+    }
+  },
+  "5376": {
+    "seatingCapacityEn": {
+      "seatingCapacity1": "2 seats",
+      "seatingCapacity2": "9+ seats"
+    },
+    "seatingCapacityFr": {
+      "seatingCapacity1": "2 places",
+      "seatingCapacity2": "9 places et +"
+    }
+  },
+  "5301": {
+    "doorsEn": {
+      "doors1": "3 Door",
+      "doors2": "4+ Door"
+    },
+    "doorsFr": {
+      "doors1": "3 portes",
+      "doors2": "4 portes et +"
+    }
+  },
+  "5326": {
+    "minLength": "5",
+    "maxLength": "75"
+  },
+  "5327": {
+    "minWeight": "50",
+    "maxWeight": "2000"
+  },
+  "5325": {
+    "minWheelbase": "10",
+    "maxWheelbase": "500"
+  },
+  "5328": {
+    "sleeps": {
+      "sleeps1": "3",
+      "sleeps2": "5"
+    }
+  },
+  "5332": {
+    "minHours": "10",
+    "maxHours": "500"
+  },
+  "5333": {
+    "minHours": "10",
+    "maxHours": "500"
+  },
+  "5329": {
+    "slideOuts": {
+      "slideOuts1": "1",
+      "slideOuts2": "2"
+    }
+  },
+  "5334": {
+    "minHorsepower": "20",
+    "maxHorsepower": "50"
+  },
+  "5336": {
+    "minEngineSize": "1000",
+    "maxEngineSize": "5000"
+  },
+  "5337": {
+    "minEngineSize": "20",
+    "maxEngineSize": "50"
+  },
+  "5374": {
+    "engineEn": {
+      "engine1": "10+ Cylinder",
+      "engine2": "6 Cylinder",
+      "engine3": "Unknown"
+    },
+    "engineFr": {
+      "engine1": "10 cylindres et +",
+      "engine2": "6 cylindres",
+      "engine3": "Inconnu"
+    }
+  },
+  "5335": {
+    "minHorsepower": "20",
+    "maxHorsepower": "50"
+  },
+  "5330": {
+    "minLength": "5",
+    "maxLength": "75",
+    "minWeight": "100",
+    "maxWeight": "90000"
+  },
+  "5324": {
+    "minWheelbase": "10",
+    "maxWheelbase": "500"
+  },
+  "5289": {
+    "make": "Honda",
+    "model": "Civic",
+    "trim": "EX",
+    "minYear": "2015",
+    "maxYear": "2017",
+    "minPrice": "1000",
+    "exteriorColourEn": {
+      "exteriorColour1": "Black",
+      "exteriorColour2": "Red"
+    },
+    "exteriorColourFr": {
+      "exteriorColour1": "Noir",
+      "exteriorColour2": "Rouge"
+    },
+    "minKilometres": "1000",
+    "distanceEn": "+1,000 km",
+    "distanceFr": "+1 000 km",
+    "display": "100"
+  },
+  "5910": {
+    "feedbackMessageEn1": "Thank You!",
+    "feedbackMessageFr1": "Merci!",
+    "feedbackMessageEn2": "Your inquiry has been sent.",
+    "feedbackMessageFr2": "Votre demande a été transmise."
+  },
+  "6538": {
+    "location": "M1P 2L6",
+    "categoryEn": "Cars, Trucks & SUVs",
+    "categoryFr": "Autos, camions et VUS"
+  },
+  "6539": {
+    "location": "M1P 2L6",
+    "categoryEn": "Commercial / Heavy Trucks",
+    "categoryFr": "Camions lourds / commerciaux"
+  },
+  "6540": {
+    "location": "M1P 2L6",
+    "categoryEn": "Trailers",
+    "categoryFr": "Remorques"
+  },
+  "6541": {
+    "location": "M1P 2L6",
+    "categoryEn": "RVs",
+    "categoryFr": "VR"
+  },
+  "6542": {
+    "location": "M1P 2L6",
+    "categoryEn": "Boats",
+    "categoryFr": "Bateaux"
+  },
+  "6543": {
+    "location": "M1P 2L6",
+    "categoryEn": "Watercraft",
+    "categoryFr": "Motomarines"
+  },
+  "6606": {
+    "location": "M1P 2L6",
+    "categoryEn": "Bikes & ATVs",
+    "categoryFr": "Motos et VTT"
+  },
+  "6607": {
+    "location": "M1P 2L6",
+    "categoryEn": "Snowmobiles",
+    "categoryFr": "Motoneiges"
+  },
+  "6608": {
+    "location": "M1P 2L6",
+    "categoryEn": "Heavy Equipment",
+    "categoryFr": "Équip. lourd"
+  },
+  "6609": {
+    "location": "M1P 2L6",
+    "categoryEn": "Farm",
+    "categoryFr": "Agricole"
+  },
+  "5381": {
+    "make": "Honda",
+    "model": "CR-V",
+    "trim": "LX",
+    "year": "2003 - 2020",
+    "priceEn": "$10,000 - $50,000",
+    "priceFr": "10 000 $ - 50 000 $"
+  },
+  "5385": {
+    "location": "M4R1B9",
+    "distanceEn": "+1,000 km",
+    "distanceFr": "+1 000 km",
+    "bodyTypeEn": "SUV",
+    "bodyTypeFr": "VUS",
+    "exteriorColourEn": "Black",
+    "exteriorColourFr": "Noir",
+    "drivetrainEn": "Four Wheel Drive",
+    "drivetrainFr": "4 roues motrices",
+    "fuelTypeEn": "Gasoline",
+    "fuelTypeFr": "Essence",
+    "engineEn": "6 Cylinder",
+    "engineFr": "6 cylindres",
+    "transmissionEn": "Automatic",
+    "transmissionFr": "Automatique",
+    "seatingCapacityEn": "5 seats",
+    "seatingCapacityFr": "5 places",
+    "doorsEn": "4+ Door",
+    "doorsFr": "4 portes et +"
+  },
+  "5386": {
+    "length": "10 ft - 150 ft",
+    "weightEn": "500 lb - 20,000 lb",
+    "weightFr": "500 lb - 20 000 lb",
+    "sleeps": "4",
+    "slideOuts": "2"
+  },
+  "5387": {
+    "subTypeEn": "Jet Boat",
+    "subTypeFr": "Bateau à tuyère",
+    "hoursEn": "100 h - 2,000 h",
+    "hoursFr": "100 h - 2 000 h"
+  },
+  "5388": {
+    "horsepowerEn": "100 hp - 5,000 hp",
+    "horsepowerFr": "100 hp - 5 000 hp"
+  },
+  "5389": {
+    "engineSize": "100 cc - 500 cc"
+  },
+  "5251": {
+    "make": "Honda"
+  },
+  "5252": {
+    "make": "Honda",
+    "model": "Civic"
+  },
+  "5253": {
+    "make": "Honda",
+    "model": "Civic",
+    "trim": "EX-T"
+  },
+  "5254": {
+    "maxYear": "2015"
+  },
+  "5255": {
+    "minYear": "2015"
+  },
+  "5256": {
+    "minYear": "2015",
+    "maxYear": "2018"
+  },
+  "5257": {
+    "maxPrice": "30000",
+    "priceEn": "$30,000",
+    "priceFr": "30 000 $"
+  },
+  "5258": {
+    "minPrice": "15000",
+    "priceEn": "$15,000",
+    "priceFr": "15 000 $"
+  },
+  "5259": {
+    "maxPrice": "30000",
+    "minPrice": "15000",
+    "priceEn": "$15,000 - $30,000",
+    "priceFr": "15 000 $ - 30 000 $"
+  },
+  "5261": {
+    "selectedSellerTypeEn": "Dealer",
+    "selectedSellerTypeFr": "Détaillant"
+  },
+  "5344": {
+    "minKilometres": "50000",
+    "maxKilometres": "100000",
+    "kmsEn": "50,000 km - 100,000 km",
+    "kmsFr": "50 000 km - 100 000 km"
+  },
+  "5368": {
+    "exteriorColourEn": "Black",
+    "exteriorColourFr": "Noir"
+  },
+  "5369": {
+    "bodyTypeEn": "Sedan",
+    "bodyTypeFr": "Berline"
+  },
+  "5370": {
+    "drivetrainEn": "Rear Wheel Drive",
+    "drivetrainFr": "Propulsion arrière"
+  },
+  "5375": {
+    "transmissionEn": "Automatic",
+    "transmissionFr": "Automatique"
+  },
+  "5377": {
+    "doorsEn": "2 Door",
+    "doorsFr": "2 portes"
+  },
+  "5378": {
+    "minLength": "20",
+    "maxLength": "25"
+  },
+  "5379": {
+    "minWeight": "200",
+    "maxWeight": "500"
+  },
+  "5380": {
+    "select1": "1",
+    "select2": "3",
+    "select3": "8"
+  },
+  "5382": {
+    "select1": "1",
+    "select2": "3"
+  },
+  "5383": {
+    "subTypeEn": "Cruiser",
+    "subTypeFr": "Croiseur",
+    "minHour": "1",
+    "maxHour": "500"
+  },
+  "5384": {
+    "maxHorsepower": "300"
+  },
+  "5390": {
+    "minEngineSize": "100",
+    "maxEngineSize": "250"
+  },
+  "7120": {
+    "flyoutTitleEn": "Buy Online with AutoTrader",
+    "flyoutTitleFr": "Acheter en ligne avec AutoHebdo",
+    "vdpBuyersHubVdpFlyout": "go/5-53078778"
+  },
+  "7122": {
+    "buyersHubTitleEn": "Buy Your Next Car Online",
+    "buyersHubTitleFr": "Achetez votre prochain véhicule en ligne",
+    "vdpBuyersHubVdpFlyout": "go/5-53078778"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  //"TraderUrl": "https://beta.autotrader.ca",
+ "TraderUrl": "https://beta.autohebdo.net",
+  //"TraderUrl": "https://www.autotrader.ca",
+  //"TraderUrl": "https://www.autohebdo.net",
+  "Configuration": "local-chrome-large"
+  //"Configuration": "local-chrome-xs"
+  //"Configuration": "local-chrome-small"
+  //"Configuration": "win-chrome-large"
+  //"Configuration": "win-firefox-large",
+  //"Configuration": "win-edge-large",
+  //"Configuration": "mac-safari-large",
+  //"Configuration": "mac-chrome-large",
+  //"Configuration": "win-chrome-medium",
+  //"Configuration": "win-firefox-medium",
+  //"Configuration": "win-edge-medium",
+  //"Configuration": "mac-safari-medium",
+  //"Configuration": "mac-chrome-medium",
+  //"Configuration": "ipad-safari-small"
+  //"Configuration": "galaxy-chrome-small",
+  //"Configuration": "android-chrome-xs"
+  //"Configuration": "ios-safari-xs"
+}

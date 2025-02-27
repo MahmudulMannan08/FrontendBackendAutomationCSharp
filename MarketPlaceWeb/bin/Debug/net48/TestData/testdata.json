@@ -1,0 +1,2225 @@
+﻿{
+  "connectionStrings": {
+    "azrmdbqa1Statistic": "Server=azrmdbqa1.eastus.cloudapp.azure.com,65185; initial catalog=Statistic; uid=Dev_ReadOnly; pwd=u_wanna%(see); Connect Timeout=90; MultipleActiveResultSets=true;", //Need new QA DB public access with Read access for user
+    "sql-tdrcatqa01Cat": "server=sql-tdrcatqa01.database.windows.net;Initial Catalog=CAT;Persist Security Info=True;User ID=CATAPI_User;Password=NAjEDSSRsrwkbmF5okIU; MultipleActiveResultSets=true;",
+    "azureStorageQatdrat": "DefaultEndpointsProtocol=https;AccountName=qatdrat;AccountKey=xcsRUYqjBGTL9CZ+0IV3b6ALheEp9g0pElYpJEKXt3Own+koMYs/AGxHmB+DTFQ9+PbrzFAkNwWJuLPfHZhIMA==;BlobEndpoint=https://qatdrat.blob.core.windows.net/;QueueEndpoint=https://qatdrat.queue.core.windows.net/;TableEndpoint=https://qatdrat.table.core.windows.net/;FileEndpoint=https://qatdrat.file.core.windows.net/;",
+    "azureStorageQatdrNotification": "DefaultEndpointsProtocol=https;AccountName=qatdrnotification;AccountKey=kzcPCTyuwtWS1KcREM8cJ/UYI8llUlc3ZzTtLBmBHhnkRxDXm6Lp0c5MNgtIuJ/HOodWHaVdILTxaJMHQiA4ew==;BlobEndpoint=https://qatdrnotification.blob.core.windows.net/;QueueEndpoint=https://qatdrnotification.queue.core.windows.net/;TableEndpoint=https://qatdrnotification.table.core.windows.net/;FileEndpoint=https://qatdrnotification.file.core.windows.net/;",
+    "azureStorageQatdrtbyb": "DefaultEndpointsProtocol=https;AccountName=qatdrtbyb;AccountKey=B/FOLBJFdjc4YF7V5ng+eCRoPqE6VoYXYVs4esg5X4Has3HKRxBO53hXDh2E+RRQVNN8zRSpOb/fgNtkhpFA8A==;EndpointSuffix=core.windows.net",
+    "azureStorageTdrcatqastorage": "DefaultEndpointsProtocol=https;AccountName=tdrcatqastorage;AccountKey=NT+dk1ku8idVxQImAJqGs387f2yKlIFTibi4cLWN5tTlbUSik6uND9861M50W3wgFQvVY4qVA84y+AStM76MxQ==;BlobEndpoint=https://tdrcatqastorage.blob.core.windows.net/;QueueEndpoint=https://tdrcatqastorage.queue.core.windows.net/;TableEndpoint=https://tdrcatqastorage.table.core.windows.net/;FileEndpoint=https://tdrcatqastorage.file.core.windows.net/;"
+  },
+  "restApi": {
+    "featureMyVehicle": {
+      "apiSubscriptionKey": "Ocp-Apim-Subscription-Key",
+      "apiSubscriptionValue": "29ddaaba66dc493cb4736f9821c020af",
+      "apiEndpoints": {
+        "vehicleInformationByVinEndpoint": "MyVehicle/VehicleInformationByVin"
+      },
+      "queryParameters": {
+        "vinParameterKey": "vin"
+      }
+    },
+    "featureReserveVehicle": {
+      "apiEndpoints": {
+        "expiredReservationEndPoint": "ReserveVehicle/ExpireReservations"
+      }
+    }
+  },
+  "FeatureToggles": {
+    "homeDeliveryToggle": true,
+    "vinRequired": false,
+    "dealerInfoBrandingVideoToggle" : false
+  },
+  "optimizelyCookies": {
+    "srpRedesign": {
+      "variantDT": "&atOptUser=7f8c6bad-f2d8-4c12-a028-06e894472139",
+      "variantXS": "&atOptUser=7dc983e9-03b2-420b-9c31-b7c29ce2e9d5"
+    },
+    "boost": {
+      "variantDT": "&atOPTUSer=7e2d93f3-b214-4fa0-9ff4-6527d099107f",
+      "variantXS": "&atOPTUSer=9eb5a3ba-c57d-432d-9f78-9d4102e87069",
+      "control": "&atOPTUSer=029bc09b-5284-4ca8-a1a3-4c9324610a30",
+      "nullProduction": "&atOPTUSer=226a32ad-49ee-4c53-ab42-49f8cd0b89f8",
+      "v2": "&atOPTUSer=7ae43d07-dafd-4080-8363-7e1032a7f9a0"
+    },
+    "homePageSearch": {
+      "controlDT": "?atOPTUSer=2c53359b-74c0-4bc3-a350-734d9a68d8d4",
+      "controlXS": "?atOPTUSer=3e057d84-f188-40c2-940c-1ac890e2d298"
+    }
+  },
+  "stripe": {
+    "secretKey": "sk_test_LwTC4Sw01aa5RaeCAj1TEGFJ005wX48RvQ",
+    "accountId": "acct_1G6pDeJMfFrMGnLl"
+  },
+  "creditCard": {
+    "ccNumber": "4242424242424242",
+    "ccExpiry": "1227",
+    "CVV": "999"
+  },
+  "urls": {
+    "srpUrlPvEn": "cars/?rcp=15&rcs=0&srt=3&prx=-1&loc=M4R1B9&hprc=True&wcp=True&sts=New-Used&inMarket=advancedSearch",
+    "srpUrlPvFr": "autos/?rcp=15&rcs=0&srt=3&prx=-1&loc=C0A%201S0&hprc=True&wcp=True&sts=Neuf-Occasion&inMarket=advancedSearch",
+    "srpUrlHeavyTrucksEn": "heavy-trucks/all/?rcp=15&rcs=0&srt=3&prx=-1&loc=M4R1B9&hprc=False&wcp=False&sts=New-Used&showcpo=1&inMarket=advancedSearch",
+    "srpUrlHeavyTrucksFr": "camion-lourd/all/?rcp=15&rcs=0&srt=3&prx=-1&loc=M4R1B9&hprc=False&wcp=False&sts=Neuf-Occasion&showcpo=1&inMarket=advancedSearch",
+    "srpUrlRvEn": "rv/all/?rcp=15&rcs=0&srt=3&prx=-1&loc=M4R1B9&hprc=False&wcp=False&sts=New-Used&showcpo=1&inMarket=advancedSearch",
+    "srpUrlRvFr": "vr/all/on/?rcp=0&rcs=0&srt=3&prx=-2&prv=Ontario&loc=M4R1B9&hprc=False&wcp=False&sts=Neuf-Occasion&inMarket=basicSearch&showcpo=1",
+    "srpUrlRBoatsEn": "boats/all/all/?rcp=15&rcs=0&srt=3&prx=-1&loc=M4R1B9&hprc=False&wcp=False&sts=New-Used&showcpo=1&inMarket=advancedSearch",
+    "srpUrlRBoatsFr": "bateau/all/all/?rcp=15&rcs=0&srt=3&prx=-1&loc=M4R1B9&hprc=False&wcp=False&sts=Neuf-Occasion&showcpo=1&inMarket=advancedSearch",
+    "srpUrlWatercraftEn": "watercraft/?rcp=15&rcs=0&srt=3&prx=-1&loc=M4R1B9&hprc=False&wcp=False&sts=New-Used&showcpo=1&inMarket=advancedSearch",
+    "srpUrlWatercraftFr": "motomarine/?rcp=15&rcs=0&srt=3&prx=-1&loc=M4R1B9&hprc=False&wcp=False&sts=Neuf-Occasion&showcpo=1&inMarket=advancedSearch",
+    "srpUrlBikesEn": "motorcycles-atvs/all/?rcp=15&rcs=0&srt=3&prx=-1&loc=M4R1B9&hprc=False&wcp=False&sts=New-Used&showcpo=1&inMarket=advancedSearch",
+    "srpUrlBikesFr": "motos-vtts/all/?rcp=15&rcs=0&srt=3&prx=-1&loc=M4R1B9&hprc=False&wcp=False&sts=Neuf-Occasion&showcpo=1&inMarket=advancedSearch",
+    "vdpGenericEn": "cars/?rcp=15&rcs=0&srt=3&prx=-1&loc=M9C%205J1&hprc=True&wcp=True&sts=New-Used&inMarket=advancedSearch",
+    "vdpGenericFr": "autos/?rcp=15&rcs=0&srt=3&prx=-1&loc=M9C%205J1&hprc=True&wcp=True&inMarket=advancedSearch",
+    "srpUrlAutomationPvEn": "cars/keyword/automation/?rcp=15&rcs=0&srt=3&prx=-1&loc=M4R1B9&hprc=True&wcp=True&sts=New-Used&inMarket=advancedSearch",
+    "srpUrlAutomationPvFr": "autos/keyword/automation/?rcp=15&rcs=0&srt=3&prx=-1&loc=C0A%201S0&hprc=True&wcp=True&sts=Neuf-Occasion&inMarket=advancedSearch",
+    "directLinkUrls": {
+      "makeModelTrimYearPriceUrlEn": "cars/honda/cr-v/?rcp=15&rcs=0&srt=3&trim=LX&yRng=2003%2C2020&pRng=10000%2C50000&prx=-1&loc=M4R1B9&hprc=True&wcp=True&sts=New-Used&inMarket=advancedSearch",
+      "makeModelTrimYearPriceUrlFr": "autos/honda/cr-v/?rcp=15&rcs=0&srt=3&trim=LX&yRng=2003%2C2020&pRng=10000%2C50000&prx=-1&loc=M4R1B9&hprc=True&wcp=True&sts=Neuf-Occasion&inMarket=advancedSearch",
+      "locDisTrmBodyExtClrDrvtrnFuelEngTrnsSeatDoorsUrlEn": "cars/on/toronto/?rcp=15&rcs=0&srt=3&prx=1000&prv=Ontario&loc=M4R1B9&clr=Black&body=SUV&fuel=Gasoline&trans=Automatic&hprc=True&wcp=True&sts=New-Used&dtn=Four%20Wheel%20Drive&eng=6%20Cylinder&scpty=5%20seats&nod=4%2B%20Door&inMarket=advancedSearch",
+      "locDisTrmBodyExtClrDrvtrnFuelEngTrnsSeatDoorsUrlFr": "autos/on/toronto/?rcp=15&rcs=0&srt=3&prx=1000&prv=Ontario&loc=M4R1B9&clr=Noir&body=VUS&fuel=Essence&trans=Automatique&hprc=True&wcp=True&sts=Neuf-Occasion&dtn=4%20roues%20motrices&eng=6%20cylindres&scpty=5%20places&nod=4%20portes%20et%20%2B&inMarket=advancedSearch",
+      "lengthWeightSleepsSlideOutsUrlEn": "rv/all/?rcp=15&rcs=0&srt=3&lfRng=10%2C150&wRng=500%2C20000&prx=-1&loc=M4R%201B9&hprc=False&wcp=False&sts=New-Used&showcpo=1&slp=4&slo=2&inMarket=advancedSearch",
+      "lengthWeightSleepsSlideOutsUrlFr": "vr/all/?rcp=15&rcs=0&srt=3&lfRng=10%2C150&wRng=500%2C20000&prx=-1&loc=M4R%201B9&hprc=False&wcp=False&sts=Neuf-Occasion&showcpo=1&slp=4&slo=2&inMarket=advancedSearch",
+      "hoursAndSubTypeUrlEn": "boats/all/jet%20boat/?rcp=15&rcs=0&srt=3&nohRng=100%2C2000&prx=-1&loc=M4R1B9&hprc=False&wcp=False&sts=New-Used&showcpo=1&inMarket=advancedSearch",
+      "hoursAndSubTypeUrlFr": "bateau/all/bateau%20%c3%a0%20tuy%c3%a8re/?rcp=15&rcs=0&srt=3&nohRng=100%2C2000&prx=-1&loc=M4R1B9&hprc=False&wcp=False&sts=Neuf-Occasion&showcpo=1&inMarket=advancedSearch",
+      "horsepowerUrlEn": "watercraft/?rcp=15&rcs=0&srt=3&shp=100%2C5000&prx=-1&loc=M4R%201B9&hprc=False&wcp=False&sts=New-Used&showcpo=1&inMarket=advancedSearch",
+      "horsepowerUrlFr": "motomarine/?rcp=15&rcs=0&srt=3&shp=100%2C5000&prx=-1&loc=M4R1B9&hprc=False&wcp=False&sts=Neuf-Occasion&showcpo=1&inMarket=advancedSearch",
+      "engineSizeUrlEn": "motorcycles-atvs/all/?rcp=15&rcs=0&srt=3&sesRng=100%2C500&prx=-1&loc=M4R%201B9&hprc=False&wcp=False&sts=New-Used&showcpo=1&inMarket=advancedSearch",
+      "engineSizeUrlFr": "motos-vtts/all/?rcp=15&rcs=0&srt=3&sesRng=100%2C500&prx=-1&loc=M4R%201B9&hprc=False&wcp=False&sts=Neuf-Occasion&showcpo=1&inMarket=advancedSearch"
+    }
+  },
+  "commonTestData": {
+    "conditionEn": {
+      "condition1": "New",
+      "condition2": "Certified Pre-Owned",
+      "condition3": "Used",
+      "condition4": "Damaged"
+    },
+    "conditionFr": {
+      "condition1": "Neuf",
+      "condition2": "Véhicules Certifiés",
+      "condition3": "Occasion",
+      "condition4": "Endommagé"
+    },
+    "fuelTypeEn": {
+      "fuelType1": "Gasoline",
+      "fuelType2": "Gas/Electric Hybrid"
+    },
+    "fuelTypeFr": {
+      "fuelType1": "Gaz naturel",
+      "fuelType2": "Hybride essence/électrique"
+    },
+
+    "featureReserveVehicle": {
+      "phone": "6044444444",
+      "postalCode": "V2B6E8",
+      "reserveVehicleEn": {
+        "reserveVehicleBtnLabel": "Reserve this vehicle",
+        "joinWaitListBtnLabel": "Join Waiting List",
+        "reserveVehicleTCHeader": "Reserve It! Consumer Terms and Conditions",
+        "joinWaitListSuccessMessage": "You joined the waiting list",
+        "emailSubjectVehicleReservation": "Vehicle reserved",
+        "emailSubjectReminder": "Your reserved vehicle is waiting for you",
+        "emailSubjectReservationCancellation": "Your reservation has been canceled",
+        "emailSubjectJoinWaitList": "New lead - A prospective customer has joined the waiting list for your reserved vehicle",
+        "emailSubjectReservationExpired": "Your reservation has expired"
+      },
+      "reserveVehicleFr": {
+        "reserveVehicleBtnLabel": "Réservez ce véhicule",
+        "joinWaitListBtnLabel": "M'inscrire sur la liste",
+        "reserveVehicleTCHeader": "Conditions générales du service Réservez-le! offert aux consommateurs",
+        "joinWaitListSuccessMessage": "Vous avez joint la liste d'attente",
+        "emailSubjectVehicleReservation": "Véhicule réservé!",
+        "emailSubjectReminder": "Votre véhicule réservé vous attend",
+        "emailSubjectReservationCancellation": "Réservation annulée",
+        "emailSubjectJoinWaitList": "Nouveaux clients potentiels pour votre liste d'attente de réservation",
+        "emailSubjectReservationExpired": "Réservation expirée"
+      },
+      "emailTopicId": {
+        "topicIdLarge": {
+          "vehicleReservationConsumerTopicId": "106004",
+          "vehicleReservationDealerTopicId": "105099",
+          "vehicleReservationReminderTopicId": "106009",
+          "vehicleReservationCancellationTopicId": "106014",
+          "reservationExpiredTopicId": "106019"
+        },
+        "topicIdSmallXS": {
+          "vehicleReservationConsumerTopicId": "106005",
+          "vehicleReservationDealerTopicId": "106000",
+          "vehicleReservationReminderTopicId": "106009", //"106010", BUG: Incorrect TopicID for XS: https://trader.atlassian.net/browse/CONS-1568
+          "vehicleReservationCancellationTopicId": "106014", //"106015" BUG: Incorrect TopicID for XS: https://trader.atlassian.net/browse/CONS-1568
+          "reservationExpiredTopicId": "106019" //"106020" BUG: Incorrect TopicID for XS: https://trader.atlassian.net/browse/CONS-1568
+        }
+      }
+    },
+    "featureInstantCashOffer": {
+      "make": "TOYOTA",
+      "postalCode": "N2K4K4",
+      "frontTireCondition": "excellent",
+      "rearTireCondition": "excellent",
+      "phoneCode": "1234",
+      "icoPageUrl": "sell-my-car",
+      "instantCashOfferEN": {
+        "color": "Black",
+        "icoBtnLabel": "Get an instant offer"
+      },
+      "instantCashOfferFR": {
+        "color": "Noir",
+        "icoBtnLabel": "Générer une nouvelle offre"
+      },
+      "highMileageOldVehicle": {
+        "vin": "5J8TB18208A000218",
+        "kilometers": "250001",
+        "postalCodeICO1": "L6P 3V7",
+        "postalCodeICO2": "M9N 1C6"
+      },
+      "icoEmailPhoneMaskingPostalCode": {
+        "singleDealerPostalCode": "V9H1S5",
+        "multiDealerPostalCode": "M9N1C6",
+        "twoDealersPostalCode": "M5V3Y4"
+      },
+      "adId": "28679239",
+      "dwwLink": "ico/dealerwebsitewidget?did=5-20151112083043626",
+      "emailTopicId": {
+        "topicIdLargeSmall": {
+          "tradeinIcoConsumerTopicId": "105027",
+          "tradeinIcoDealerTopicId": "105032",
+          "tradeinIco1STopicId": "105032",
+          "buyingCenterIcoConsumerTopicId": "105037",
+          "buyingCenterIcoDealerTopicId": "105042",
+          "buyingCenterIco1STopicId": "105042"
+        },
+        "topicIdXS": {
+          "tradeinIcoConsumerTopicId": "105028",
+          "tradeinIcoDealerTopicId": "105033",
+          "tradeinIco1STopicId": "105033",
+          "buyingCenterIcoConsumerTopicId": "105038",
+          "buyingCenterIcoDealerTopicId": "105043",
+          "buyingCenterIco1STopicId": "105043"
+        }
+      }
+    },
+    "featureBuyOnline": {
+      "buyOnlineEn": {
+        "buyOnlineUrl": "buy-car-online"
+      },
+      "buyOnlineFr": {
+        "buyOnlineUrl": "acheter-en-ligne"
+      },
+      "postalCode": "M4R1B9",
+      "privacyUrl": "privacy-statement/?#privacy",
+      "termsUrl": "privacy-statement/?#terms"
+    },
+    "featureLeads": {
+      "emailTopicId": {
+        "topicIdLargeSmall": {
+          "generalInquiryLeadConsumerTopicId": "102071",
+          "generalInquiryLeadDealerTopicId": "102071",
+          "generalInquiryLead_1S_TopicId": "102071",
+          "viewMapBAALeadConsumerTopicId": "107015",
+          "viewMapBAALeadDealerTopicId": "107010",
+          "viewMapBAALead1STopicId": "107010",
+          "bookAnAppointmentLeadConsumerTopicId": "106075",
+          "bookAnAppointmentLeadDealerTopicId": "106070",
+          "bookAnAppointmentLead1STopicId": "106070",
+          "makeAnOfferLeadConsumerTopicId": "104814",
+          "makeAnOfferLeadDealerTopicId": "104814",
+          "makeAnOfferLead1STopicId": "104814",
+          "homeTestDriveLeadConsumerTopicId": "106095",
+          "homeTestDriveLeadDealerTopicId": "106090",
+          "homeTestDriveLead1STopicId": "106090",
+          "galleryLeadConsumerTopicId": "104925",
+          "galleryLeadDealerTopicId": "104925",
+          "galleryLead1STopicId": "104925",
+          "csBadgeBookApptLeadConsumerTopicId": "106075",
+          "csBadgeBookApptLeadDealerTopicId": "106070",
+          "csBadgeBookApptLead1STopicId": "106070",
+          "dealerInventoryGILeadConsumerTopicId": "104965",
+          "dealerInventoryGILeadDealerTopicId": "104970",
+          "dealerInventoryGILead1STopicId": "102071",
+          //"dealerInventorySILeadConsumerTopicId": "104975",  //Disabling, until different lead types are re-introduced back to DIP lead form
+          //"dealerInventorySILeadDealerTopicId": "104980",
+          //"dealerInventorySILead1STopicId": "102071",
+          //"dealerInventoryNVILeadConsumerTopicId": "104945",
+          //"dealerInventoryNVILeadDealerTopicId": "104950",
+          //"dealerInventoryNVILead1STopicId": "102071",
+          //"dealerInventoryUVILeadConsumerTopicId": "104955",
+          //"dealerInventoryUVILeadDealerTopicId": "104960",
+          //"dealerInventoryUVILead1STopicId": "102071",
+          "deliveryLeadConsumerTopicId": "106080",
+          "deliveryLeadDealerTopicId": "106080",
+          "deliveryLead1STopicId": "106080"
+        },
+        "topicIdXS": {
+          "generalInquiryLeadConsumerTopicId": "104786",
+          "generalInquiryLeadDealerTopicId": "104786",
+          "generalInquiryLead_1S_TopicId": "104786",
+          "viewMapBAALeadConsumerTopicId": "107016",
+          "viewMapBAALeadDealerTopicId": "107011",
+          "viewMapBAALead1STopicId": "107011",
+          "bookAnAppointmentLeadConsumerTopicId": "106076",
+          "bookAnAppointmentLeadDealerTopicId": "106071",
+          "bookAnAppointmentLead1STopicId": "106071",
+          "makeAnOfferLeadConsumerTopicId": "104891",
+          "makeAnOfferLeadDealerTopicId": "104891",
+          "makeAnOfferLead1STopicId": "104891",
+          "homeTestDriveLeadConsumerTopicId": "106096",
+          "homeTestDriveLeadDealerTopicId": "106091",
+          "homeTestDriveLead1STopicId": "106091",
+          "csBadgeBookApptLeadConsumerTopicId": "106076",
+          "csBadgeBookApptLeadDealerTopicId": "106071",
+          "csBadgeBookApptLead1STopicId": "106071",
+          "dealerInventoryGILeadConsumerTopicId": "104966",
+          "dealerInventoryGILeadDealerTopicId": "104971",
+          "dealerInventoryGILead1STopicId": "102071",
+          //"dealerInventorySILeadConsumerTopicId": "104976",  //Disabling, until different lead types are re-introduced back to DIP lead form
+          //"dealerInventorySILeadDealerTopicId": "104981",
+          //"dealerInventorySILead1STopicId": "102071",
+          //"dealerInventoryNVILeadConsumerTopicId": "104946",
+          //"dealerInventoryNVILeadDealerTopicId": "104951",
+          //"dealerInventoryNVILead1STopicId": "102071",
+          //"dealerInventoryUVILeadConsumerTopicId": "104956",
+          //"dealerInventoryUVILeadDealerTopicId": "104961",
+          //"dealerInventoryUVILead1STopicId": "102071",
+          "deliveryLeadConsumerTopicId": "106081",
+          "deliveryLeadDealerTopicId": "106081",
+          "deliveryLead1STopicId": "106081"
+        }
+      },
+      "BookAnAppointment": {
+        "emailSubjectEn": "Book Appointment Lead from AutoTrader.ca",
+        "emailSubjectFr": "Client potentiel : demande de prise de rendez-vous généré par AutoHebdo.net"
+      },
+      "feedbackMessageEn1": "Thank You !",
+      "feedbackMessageFr1": "Merci !",
+      "feedbackMessageEn2": "Your inquiry has been sent.",
+      "feedbackMessageFr2": "Votre demande a été transmise.",
+      "phoneNumber": "6044444444",
+      "dealerInventoryPageEn": {
+        "dealerInventoryPageUrl": "dealership/20160628231700642/" //dealership/20220510151942908/"
+      },
+      "dealerInventoryPageFr": {
+        "dealerInventoryPageUrl": "concessionnaire/20160628231700642/" //concessionnaire/20220510151942908/"
+      },
+      "t&cEn": "By clicking \"Send\" I agree to receive communications from AutoTrader. I can unsubscribe at anytime. I also agree to the Terms of Use and Privacy Policy.",
+      "t&cFr": "En cliquant sur « Envoyer », j’accepte de recevoir des communications d’AutoHebdo. Je prends note que je peux me désabonner en tout temps. J’accepte aussi les Conditions d’utilisation et la Politique de confidentialité.",
+      "phoneText": "Sellers prioritize leads with a phone number",
+      "phoneTextFr": "Les vendeurs donnent la priorité aux clients potentiels qui ont un numéro de téléphone"
+    },
+    "featureTbyb": {
+      "phoneNumber": "6044444444",
+      "city": "Mississauga",
+      "postalCode": "L4Y2C1",
+      "updatedCity": "Toronto",
+      "updatedPostalCode": "M5J1J5"
+    },
+    "emailSubjectFr": "Client potentiel: offre d'achat pour un véhicule annoncé sur AutoHebdo.net", //put in right node!
+    "featureSSO": {
+      "pvAdId": "29650389",
+      "localAccountEmail": "traderuicatautomation@gmail.com",
+      "localAccountPassword": "Traderqa123@",
+      "socialAccountFBEmail": "traderuicatautomation@gmail.com",
+      "socialAccountFBPassword": "Traderqa1234@",
+      "newSsoAccountPassword": "Traderqa123@",
+      "mailinatorApiToken": "4a633eacb92c433192db9b30351fdcca", //used in 1 test
+      "mailinatorApiToken2": "26d767bb61c54b769c964dd3cd19e127", //used in 2 tests
+      "mailinatorApiToken3": "df90f0f0541c4647b16f0c2589ca905f", //used in 2 tests
+      "mailinatorApiToken4": "879bb8ff3ee1451e91ee9cc678423370", //used in 3 tests
+      "mailinatorApiToken5": "e1a3a51d69d043a98e4e46f64766e258", //used in 3 tests
+      "mailinatorApiToken6": "006d813c004441cfba1a207e7ea067c7", //used in 3 tests
+      "mailinatorApiToken7": "5933c132de204298baec31139315c5a5", //used in 3 test
+      "mailinatorApiToken8": "a3bd540e2e5a4c05b842285ec85b85dd", //used in 4 tests
+      "mailinatorApiToken9": "6f24ababfcee4ef385a251d68de66135",
+      "mailinatorPrivateDomainName": "tradernewssoreg.testinator.com", //used in 1 test //mahmudul.mannan@trader.ca
+      "mailinatorPrivateDomainName2": "tradernewssoreg2.testinator.com", //used in 2 tests //kamran.mirza@trader.ca
+      "mailinatorPrivateDomainName3": "tradersso.testinator.com", //used in 2 tests //maulik.patel2@trader.ca
+      "mailinatorPrivateDomainName4": "tradernewssoreg4.testinator.com", //used in 3 tests //shah.sajid@trader.ca
+      "mailinatorPrivateDomainName5": "tradernewssoreg5.testinator.com", //used in 3 tests //syed.mesam@trader.ca
+      "mailinatorPrivateDomainName6": "tradernewssoreg6.testinator.com", //used in 3 tests //dayo.osunrinde@trader.ca
+      "mailinatorPrivateDomainName7": "tradernewssoreg7.testinator.com", //used in 3 test //kunal.chadha@trader.ca
+      "mailinatorPrivateDomainName8": "tradernewssoreg8.testinator.com", //used in 4 tests  //viren.bochare@trader.ca
+      "mailinatorPrivateDomainName9": "tradernewssoreg9.testinator.com", //umang.patel@trader.ca
+      "userName": "tradercat8@gmail.com",
+      "password": "LocalCat@2023",
+      "passwordFb": "4Trader2021",
+      "passwordGoogle": "4Trader2021",
+      "passwordApple": "AppleCAT@2023",
+      "firstName": "Trader",
+      "lastName": "Automation",
+      "invalidUser": "tradercat8gmailcom",
+      "invalidPassword": "Invalid2023",
+      "preferenceCentreTestAccounts": {
+        "userNameWnEN": "preferenceCentre@tradersso.testinator.com",
+        "userNameWnFR": "preferencecentre2@tradersso.testinator.com",
+        "userNameAnEN": "preferencecentre3@tradersso.testinator.com",
+        "userNameAnFR": "preferencecentre4@tradersso.testinator.com",
+        "password": "Admintest@40"
+      },
+      "savedVehicles": {
+        "localAccountEmail": "savedvehicle@tradernewssoreg.testinator.com",
+        "localAccountPassword": "Traderqa123@",
+        "EN": {
+          "VehicleSavedToasterMsg": "Vehicle saved to My Garage!",
+          "VehicleUnsavedToasterMsg": "Vehicle Removed",
+          "VehicleAlreadySavedToasterMsg": "Vehicle already saved to My Garage!"
+        },
+        "FR": {
+          "VehicleSavedToasterMsg": "Véhicle sauvegardé dans Mon Garage",
+          "VehicleUnsavedToasterMsg": "Véhicule supprimé",
+          "VehicleAlreadySavedToasterMsg": "Véhicle déjà sauvegardé dans Mon Garage!"
+        }
+      },
+      "editVehicle": {
+        "userEmailDT": "editvehicle@tradersso.testinator.com",
+        "userEmailSM": "editvehiclesm@tradersso.testinator.com",
+        "userEmailXS": "editvehiclexs@tradersso.testinator.com",
+        "userEmailDT2": "editvehicle2@tradersso.testinator.com",
+        "userEmailSM2": "editvehiclesm2@tradersso.testinator.com",
+        "userEmailXS2": "editvehiclexs2@tradersso.testinator.com",
+        "password": "Admintest@40"
+      },
+      "myVehicles": {
+        "vin": "4T3BK3BB2EU100445", //"JTMDFREV6FJ018482",
+        "make": "Audi"
+      },
+      "EN": {
+        "deleteSaveSearchMsg": "Search removed",
+        "undoDeleteSaveSearchMsg": "Undo success",
+        "updateSaveSearchMsg": "Search renamed!",
+        "invalidUserText": "We can't seem to find your account.",
+        "invalidPasswordText": "Your password is incorrect.",
+        "updatePreferenceCentreMsg": "Your email preferences have been updated."
+      },
+      "FR": {
+        "deleteSaveSearchMsg": "Recherche supprimée",
+        "undoDeleteSaveSearchMsg": "annuler le succès",
+        "updateSaveSearchMsg": "La recherche a été renommée!",
+        "invalidUserText": "Nous n'arrivons pas à trouver votre compte.",
+        "invalidPasswordText": "Votre mot de passe est incorrect.",
+        "updatePreferenceCentreMsg": "Vos préférences de messagerie ont été mises à jour."
+      }
+
+    },
+    "homeDelivery": {
+      "EN": {
+        "homeDeliveryURL": "home-delivery",
+        "virtualProximityText": "online only",
+        "hybridProximityText": "delivery available",
+        "virtualProximityTextXS": "online only",
+        "hybridProximityTextXS": "+ delivery"
+      },
+      "FR": {
+        "homeDeliveryURL": "livraison-à-domicile",
+        "virtualProximityText": "uniquement en ligne",
+        "hybridProximityText": "livraison disponible",
+        "virtualProximityTextXS": "uniquement en ligne",
+        "hybridProximityTextXS": "+ livraison"
+      }
+    },
+    "dealerInfo": {
+      "EN": {
+        "widgetHeader": "About the dealer"
+      },
+      "FR": {
+        "widgetHeader": "À propos du concessionnaire"
+      }
+    }
+  },
+
+  "73663": {
+    "year": "2013", //"2015",
+    "make": "Audi", //"TOYOTA",
+    "model": "Q5", //"RAV4",
+    "vin": "WA1CGCFP8DA031831" //"JTMDFREV6FJ018482"
+  },
+  "11417": {
+    "pvAdId1": "30256340",
+    "pvAdId2": "29879862",
+    "pvAdId3": "28958503"
+  },
+  "11418": {
+    "pvAdId1": "29793158",
+    "pvAdId2": "29615633", //dealer Id 20201208203207581 found deleted
+    "pvAdId3": "29001578"
+  },
+  "11424": {
+    "cnrAdId1": "27797951",
+    "cnrAdId2": "28127217",
+    "cnrAdId3": "28128289"
+  },
+  "11546": {
+    "pvAdId1": "29770208",
+    "pvAdId2": "28565112",
+    "pvAdId3": "28637981"
+  },
+  "11547": {
+    "pvAdId1": "30240663",
+    "pvAdId2": "28689270",
+    "pvAdId3": "28818882"
+  },
+  "11422": {
+    "pvAdId1": "29801597",
+    "pvAdId2": "29793711",
+    "pvAdId3": "29615606"
+  },
+  "61439": {
+    "pvAdId1": "30002229",
+    "pvAdId2": "30002230",
+    "pvAdId3": "30377466"
+  },
+
+  "6661": {
+    "buyOnlineEn": {
+      "buyYourNextCarTitle": "Buy Your Next Car Online",
+      "getNotifiedTitle": "Get notifed when OnlineSellerPlus dealers are available in your region!",
+      "justATapAwayTitle": "Just a tap away",
+      "subTitle1": "Fast and Easy Buying Process",
+      "subTitle2": "Customize Your Purchase",
+      "subTitle3": "Apply for Credit",
+      "subTitle4": "Reserve Vehicle Online",
+      "subTitle5": "Trade-In Your Current Vehicle",
+      "showMeAllVehiclesTitle": "Show Me All Vehicles I Can Buy Online",
+      "onlineSellerPlusTitle": "Introducing OnlineSellerPlus Dealerships in the Greater Toronto Area!",
+      "bestCarDealsTitle": "Best Car Deals in Canada",
+      "priceGuidanceSubtitle": "Price guidance you can trust",
+      "liveChatCarouselTitle": "Live Chat",
+      "homeTestDriveCarouselTitle": "Home Test Drive",
+      "virtualAppraisalCarouselTitle": "Virtual Appraisal",
+      "onlineReservationCarouselTitle": "Online Reservation",
+      "localDeliveryCarouselTitle": "Local Delivery",
+      "icoTitle": "Need to sell your car quickly? Try our Instant Cash Offer"
+    },
+    "buyOnlineFr": {
+      "buyYourNextCarTitle": "Achetez votre prochain véhicule en ligne",
+      "getNotifiedTitle": "Soyez informé lorsque des commerçants VenteEnLigne+ seront disponibles dans votre région!",
+      "justATapAwayTitle": "En un seul clic",
+      "subTitle1": "Processus d’achat rapide et facile",
+      "subTitle2": "Personnalisation d’achat",
+      "subTitle3": "Demande de crédit",
+      "subTitle4": "Réservation en ligne",
+      "subTitle5": "Échangez votre véhicule actuel",
+      "showMeAllVehiclesTitle": "Cliquez ici pour voir l’inventaire en ligne en entier",
+      "onlineSellerPlusTitle": "Découvrez les concessionaires VenteEnLigne+ dans la Région du Grand Toronto!",
+      "bestCarDealsTitle": "Meilleures Offres au Canada",
+      "priceGuidanceSubtitle": "Un guide de prix fiable",
+      "liveChatCarouselTitle": "Clavardage (Chat)",
+      "homeTestDriveCarouselTitle": "Essai Routier À Domicile",
+      "virtualAppraisalCarouselTitle": "Valeur D’Échange À Distance",
+      "onlineReservationCarouselTitle": "Réservation En Ligne",
+      "localDeliveryCarouselTitle": "Livraison Locale",
+      "icoTitle": "Besoin de vendre votre auto rapidement? Obtenez une Offre argent comptant!"
+    }
+  },
+  "recursiveData": {
+    "8464": {
+      "ads": {
+        "pvAd": "30102743",
+        "cnrAd": "30102745"
+      }
+    },
+    "5976": {
+      "ads": {
+        "pvAd": "29579725",
+        "cnrAd": "29270001"
+      }
+    },
+    "8451": {
+      "ads": {
+        "pvAd": "30102743",
+        "cnrAd": "30102745"
+      }
+    },
+    "8573": {
+      "ads": {
+        "pvAd": "30102743",
+        "cnrAd": "30107333"
+      }
+    },
+    "8452": {
+      "Urls": {
+        "pvAd": "go/5-30102743",
+        "cnrAd": "go/5-30102745"
+      }
+    }
+  },
+  "6667": {
+    "make": "Honda",
+    "model": "Civic"
+  },
+  "6668": {
+    "buyOnlineEn": {
+      "defaultSRPTitle": "New & Used Cars for sale in Canada"
+    },
+    "buyOnlineFr": {
+      "defaultSRPTitle": "Autos neuves et d'occasion à vendre au Canada"
+    }
+  },
+  "6670": {
+    "icoUrl": "ico"
+  },
+  "7764": {
+    "buyOnlineEn": {
+      "successMsg": "You're all set! You'll get notified when OnlineSellerPlus dealers are available in your area!"
+    },
+    "buyOnlineFr": {
+      "successMsg": "C'est confirmé! Vous serez averti lorsque des revendeurs VenteEnLigne+ seront disponibles dans votre région!"
+    }
+  },
+  "7652": {
+    "buyOnlineEn": {
+      "faqTitle": "Frequently Asked Questions"
+    },
+    "buyOnlineFr": {
+      "faqTitle": "Foire aux questions"
+    }
+  },
+  "6768": {
+    "adId1": "29943679", //28760400
+    "adId2": "30077786"
+  },
+  "6766": {
+    "adId1": "29961368",
+    "adId2": "30077768"
+  },
+  "6767": {
+    "adId1": "29961369",
+    "adId2": "30077771"
+  },
+  "6773": {
+    "adId1": "29961370",
+    "adId2": "30077770",
+    "privacyUrl": "privacy-statement"
+  },
+  "6772": {
+    "adId1": "29961371",
+    "adId2": "30077773"
+  },
+  "6764": {
+    "adId1": "30077782", //29961372
+    "adId2": "30077769"
+  },
+  "6765": {
+    "adId1": "29961373",
+    "adId2": "30077772"
+  },
+  "8297": {
+    "adId1": "28175275",
+    "adId2": "28095720"
+  },
+  "7538": {
+    "adId1": "30097674",
+    "adId2": "30097685"
+  },
+  "7539": {
+    "adId1": "30097690",
+    "adId2": "30097688"
+  },
+  "7540": {
+    "adId1": "30097683",
+    "adId2": "30097687"
+  },
+  "7541": {
+    "adId1": "30097667",
+    "adId2": "30097670"
+  },
+  "8299": {
+    "adId1": "30097672",
+    "adId2": "30097668"
+  },
+  "8157": {
+    "adId1": "30058003",
+    "adId2": "30058004",
+    "adId3": "30058006",
+    "adId4": "30058013",
+    "adId5": "30058020",
+    "adId6": "30058033",
+    "adId7": "30058040",
+    "adId8": "30058041",
+    "adId9": "30058048",
+    "adId10": "30058000",
+    "adId11": "30058049",
+    "adId12": "30058050",
+    "adId13": "30058051",
+    "adId14": "29861135"
+  },
+  "5291": {
+    "make": "Honda",
+    "model": "Civic",
+    "trim": {
+      "trim1": "DX-G",
+      "trim2": "SE",
+      "trim3": "Touring"
+    }
+  },
+  "5292": {
+    "minYear": "2010",
+    "maxYear": "2018"
+  },
+  "5287": {
+    "minPrice": "5000",
+    "maxPrice": "10000"
+  },
+  "5290": {
+    "minPayment": "100",
+    "maxPayment": "200",
+    "downPayment": "2000",
+    "tradeInValue": "1000"
+  },
+  "5293": {
+    "bodyTypeEn": {
+      "bodyType1": "Coupe",
+      "bodyType2": "Other/Don't Know"
+    },
+    "bodyTypeFr": {
+      "bodyType1": "Coupé",
+      "bodyType2": "Autre / Je ne sais pas"
+    }
+  },
+  "5294": {
+    "exteriorColourEn": {
+      "colour1": "Black",
+      "colour2": "Dark Grey",
+      "colour3": "Silver"
+    },
+    "exteriorColourFr": {
+      "colour1": "Argent",
+      "colour2": "Gris foncé",
+      "colour3": "Noir"
+    }
+  },
+  "5295": {
+    "minMileage": "2000",
+    "maxMileage": "600000"
+  },
+  "5296": {
+    "drivetrainEn": {
+      "drivetrain1": "All Wheel Drive",
+      "drivetrain2": "Front Wheel Drive"
+    },
+    "drivetrainFr": {
+      "drivetrain1": "4 roues motrices",
+      "drivetrain2": "Traction avant"
+    }
+  },
+  "5300": {
+    "seatingCapacityEn": {
+      "seatingCapacity1": "4 seats",
+      "seatingCapacity2": "5 seats"
+    },
+    "seatingCapacityFr": {
+      "seatingCapacity1": "4 places",
+      "seatingCapacity2": "5 places"
+    }
+  },
+  "5376": {
+    "seatingCapacityEn": {
+      "seatingCapacity1": "2 seats",
+      "seatingCapacity2": "9+ seats"
+    },
+    "seatingCapacityFr": {
+      "seatingCapacity1": "2 places",
+      "seatingCapacity2": "9 places et +"
+    }
+  },
+  "5301": {
+    "doorsEn": {
+      "doors1": "3 Door",
+      "doors2": "4+ Door"
+    },
+    "doorsFr": {
+      "doors1": "3 portes",
+      "doors2": "4 portes et +"
+    }
+  },
+  "5326": {
+    "minLength": "5",
+    "maxLength": "75"
+  },
+  "5327": {
+    "minWeight": "50",
+    "maxWeight": "2000"
+  },
+  "5325": {
+    "minWheelbase": "10",
+    "maxWheelbase": "500"
+  },
+  "5328": {
+    "sleeps": {
+      "sleeps1": "3",
+      "sleeps2": "5"
+    }
+  },
+  "5332": {
+    "minHours": "10",
+    "maxHours": "500"
+  },
+  "5333": {
+    "minHours": "10",
+    "maxHours": "500"
+  },
+  "5329": {
+    "slideOuts": {
+      "slideOuts1": "1",
+      "slideOuts2": "2"
+    }
+  },
+  "5334": {
+    "minHorsepower": "20",
+    "maxHorsepower": "50"
+  },
+  "5336": {
+    "minEngineSize": "1000",
+    "maxEngineSize": "5000"
+  },
+  "5337": {
+    "minEngineSize": "20",
+    "maxEngineSize": "1000" //20-50 had 0 results
+  },
+  "5374": {
+    "engineEn": {
+      "engine1": "10+ Cylinder",
+      "engine2": "6 Cylinder",
+      "engine3": "Unknown"
+    },
+    "engineFr": {
+      "engine1": "10 cylindres et +",
+      "engine2": "6 cylindres",
+      "engine3": "Inconnu"
+    }
+  },
+  "5335": {
+    "minHorsepower": "20",
+    "maxHorsepower": "50"
+  },
+  "5330": {
+    "minLength": "5",
+    "maxLength": "75",
+    "minWeight": "50",
+    "maxWeight": "2000"
+  },
+  "5324": {
+    "minWheelbase": "10",
+    "maxWheelbase": "500"
+  },
+  "5289": {
+    "make": "Honda",
+    "model": "Civic",
+    "trim": "LX", //"EX",
+    "minYear": "2015",
+    "maxYear": "2019", //"2017",
+    "minPrice": "1000",
+    "exteriorColourEn": {
+      "exteriorColour1": "Black",
+      "exteriorColour2": "Blue" //"Red"
+    },
+    "exteriorColourFr": {
+      "exteriorColour1": "Noir",
+      "exteriorColour2": "Bleu" //"Rouge"
+    },
+    "minKilometres": "1000",
+    "distanceEn": "+1,000 km",
+    "distanceFr": "+1 000 km",
+    "display": "100"
+  },
+  "6538": {
+    "location": "M4R1B9",
+    "categoryEn": "Cars, Trucks & SUVs",
+    "categoryFr": "Autos, camions et VUS"
+  },
+  "6539": {
+    "location": "M4R1B9",
+    "categoryEn": "Commercial / Heavy Trucks",
+    "categoryFr": "Camions lourds / commerciaux"
+  },
+  "6540": {
+    "location": "M4R1B9",
+    "categoryEn": "Trailers",
+    "categoryFr": "Remorques"
+  },
+  "6541": {
+    "location": "M4R1B9",
+    "categoryEn": "RVs",
+    "categoryFr": "VR"
+  },
+  "6542": {
+    "location": "M4R1B9",
+    "categoryEn": "Boats",
+    "categoryFr": "Bateaux"
+  },
+  "6543": {
+    "location": "M4R1B9",
+    "categoryEn": "Watercraft",
+    "categoryFr": "Motomarines"
+  },
+  "6606": {
+    "location": "M4R1B9",
+    "categoryEn": "Bikes & ATVs",
+    "categoryFr": "Motos et VTT"
+  },
+  "6607": {
+    "location": "M4R1B9",
+    "categoryEn": "Snowmobiles",
+    "categoryFr": "Motoneiges"
+  },
+  "6608": {
+    "location": "M4R1B9",
+    "categoryEn": "Heavy Equipment",
+    "categoryFr": "Équip. lourd"
+  },
+  "6609": {
+    "location": "M4R1B9",
+    "categoryEn": "Farm",
+    "categoryFr": "Agricole"
+  },
+  "5381": {
+    "make": "Honda",
+    "model": "CR-V",
+    "trim": "LX",
+    "yearMin": "2003",
+    "yearMax": "2020",
+    "priceMin": "10000",
+    "priceMax": "50000",
+    "priceMinEn": "$10,000",
+    "priceMaxEn": "$50,000",
+    "priceMinFr": "10 000 $",
+    "priceMaxFr": "50 000 $"
+  },
+  "5385": {
+    "location": "M4R1B9",
+    "distanceEn": "+1,000 km",
+    "distanceFr": "+1 000 km",
+    "bodyTypeEn": "SUV",
+    "bodyTypeFr": "VUS",
+    "exteriorColourEn": "Black",
+    "exteriorColourFr": "Noir",
+    "drivetrainEn": "Four Wheel Drive",
+    "drivetrainFr": "4 roues motrices",
+    "fuelTypeEn": "Gasoline",
+    "fuelTypeFr": "Essence",
+    "engineEn": "6 Cylinder",
+    "engineFr": "6 cylindres",
+    "transmissionEn": "Automatic",
+    "transmissionFr": "Automatique",
+    "seatingCapacityEn": "5 seats",
+    "seatingCapacityFr": "5 places",
+    "doorsEn": "4+ Door",
+    "doorsFr": "4 portes et +"
+  },
+  "5386": {
+    "length": "10 ft - 150 ft",
+    "weightEn": "500 lb - 20,000 lb",
+    "weightFr": "500 lb - 20 000 lb",
+    "sleeps": "4",
+    "slideOuts": "2"
+  },
+  "5387": {
+    "subTypeEn": "Jet Boat",
+    "subTypeFr": "Bateau à tuyère",
+    "hoursEn": "100 h - 2,000 h",
+    "hoursFr": "100 h - 2 000 h"
+  },
+  "5388": {
+    "horsepowerEn": "100 hp - 5,000 hp",
+    "horsepowerFr": "100 hp - 5 000 hp"
+  },
+  "5389": {
+    "engineSize": "100 cc - 500 cc"
+  },
+  "5251": {
+    "make": "AC"
+  },
+  "5252": {
+    "make": "AC",
+    "model": "Ace"
+  },
+  "5253": {
+    "make": "Honda",
+    "model": "Civic",
+    "trim": "LX"
+  },
+  "5254": {
+    "maxYear": "2015"
+  },
+  "5255": {
+    "minYear": "2015"
+  },
+  "5256": {
+    "minYear": "2015",
+    "maxYear": "2018"
+  },
+  "5257": {
+    "maxPrice": "30000",
+    "priceEn": "$30,000",
+    "priceFr": "30 000 $"
+  },
+  "5258": {
+    "minPrice": "15000",
+    "priceEn": "$15,000",
+    "priceFr": "15 000 $"
+  },
+  "5259": {
+    "maxPrice": "30000",
+    "minPrice": "15000",
+    "priceEn": "$15,000 - $30,000",
+    "priceFr": "15 000 $ - 30 000 $"
+  },
+  "5344": {
+    "minKilometres": "50000",
+    "maxKilometres": "100000",
+    "kmsEn": "50,000 km - 100,000 km",
+    "kmsFr": "50 000 km - 100 000 km"
+  },
+  "5368": {
+    "exteriorColourEn": "Black",
+    "exteriorColourFr": "Noir"
+  },
+  "5369": {
+    "bodyTypeEn": "Sedan",
+    "bodyTypeFr": "Berline"
+  },
+  "5370": {
+    "drivetrainEn": "Rear Wheel Drive",
+    "drivetrainFr": "Propulsion arrière"
+  },
+  "5375": {
+    "transmissionEn": "Automatic",
+    "transmissionFr": "Automatique"
+  },
+  "5377": {
+    "doorsEn": "2 Door",
+    "doorsFr": "2 portes"
+  },
+  "5378": {
+    "minLength": "20",
+    "maxLength": "25"
+  },
+  "5379": {
+    "minWeight": "200",
+    "maxWeight": "500"
+  },
+  "5380": {
+    "select1": "1",
+    "select2": "3",
+    "select3": "8"
+  },
+  "5382": {
+    "select1": "1",
+    "select2": "3"
+  },
+  "5383": {
+    "subTypeEn": "Cruiser",
+    "subTypeFr": "Croiseur",
+    "minHour": "1",
+    "maxHour": "500"
+  },
+  "5384": {
+    "maxHorsepower": "300"
+  },
+  "5390": {
+    "minEngineSize": "100",
+    "maxEngineSize": "250"
+  },
+  "7252": {
+    "EN": {
+      "OldCarUrl": "cars/honda/accord/2015/on/toronto/?rcp=15&rcs=0&srt=3&pRng=%2C18000&prx=25&prv=Ontario&loc=M5C%202V6&hprc=True&wcp=True&sts=Used&adtype=Dealer&showcpo=1&inMarket=advancedSearch",
+      "paymentConfig": {
+        "downpayment": "1000",
+        "tradeIn": "200",
+        "salesTax": true
+      },
+      "pricingBreakdown": {
+        "dealerPriceLabel": "Dealer price",
+        "dealerPrice": "$18,000",
+        "interestChargeLabel": "Cost of borrowing",
+        "salesTaxLabel": "Sales Taxes",
+        "downPaymentLabel": "Down Payment",
+        "downPayment": "-$1,000",
+        "tradeInLabel": "Trade-in",
+        "tradeIn": "-$200",
+        "totalObligationLabel": "Total obligation",
+        "yourEstimateLabel": "Your estimated payment",
+        "yourEstimateFequency": "bi-weekly*"
+      },
+      "paymentBottomPanel": {
+        "disclaimer": "*Interest rates displayed are for demonstrational/comparison purposes only and may differ depending on creditworthiness and financing offers available from dealers and/or third party lender. Please confirm accuracy of information with seller. Mileage recorded at time of listing. Taxes and license are not included in listing price."
+      }
+    },
+    "FR": {
+      "OldCarUrl": "autos/honda/accord/2015/on/toronto/?rcp=15&rcs=0&srt=3&pRng=%2C18000&prx=25&prv=Ontario&loc=M5C%202V6&hprc=True&wcp=True&sts=Occasion&adtype=Commercants&showcpo=1&inMarket=advancedSearch",
+      "paymentConfig": {
+        "downpayment": "1000",
+        "tradeIn": "200",
+        "salesTax": true
+      },
+      "pricingBreakdown": {
+        "dealerPriceLabel": "Prix de vente",
+        "dealerPrice": "18 000 $",
+        "interestChargeLabel": "Coût d’emprunt",
+        "salesTaxLabel": "Taxes de vente",
+        "downPaymentLabel": "Acompte",
+        "downPayment": "-1 000 $",
+        "tradeInLabel": "Valeur d’échange",
+        "tradeIn": "-200 $",
+        "totalObligationLabel": "Obligation totale",
+        "yourEstimateLabel": "Votre paiement estimatif",
+        "yourEstimateFequency": "aux deux-semaines*"
+      },
+      "paymentBottomPanel": {
+        "disclaimer": "*Les taux d’intérêt affichés le sont uniquement à titre indicatif et peuvent varier en fonction de la solvabilité de l’emprunteur et des offres de financement courantes du commerçant ou de prêteurs externes. Veuillez confirmer l’exactitude des renseignements publiés auprès du vendeur. Le kilométrage indiqué est la valeur au moment de la publication de l’annonce. Taxes et frais d’immatriculation en sus."
+      }
+    }
+  },
+  "11064": {
+    "EN": {
+      "NewCarUrl": "go/5-30251167",
+      "paymentConfig": {
+        "salesTax": true
+      },
+      "pricingBreakdown": {
+        "dealerPriceLabel": "Dealer price",
+        "salesTaxLabel": "Sales Taxes",
+        "FederalLuxuryTaxLabel": "Federal Luxury Tax (Based on MSRP)",
+        "FederalLuxuryTax": "$16,718"
+      }
+    },
+    "FR": {
+      "NewCarUrl": "go/5-30251167",
+      "paymentConfig": {
+        "salesTax": true
+      },
+      "pricingBreakdown": {
+        "dealerPriceLabel": "Prix de vente",
+        "salesTaxLabel": "Taxes de vente",
+        "FederalLuxuryTaxLabel": "Taxe de luxe fédérale (selon le PDSF)",
+        "FederalLuxuryTax": "16 718 $"
+      }
+    }
+  },
+  "6846": {
+    "EN": {
+      "OldCarUrl": "cars/ac/aceca/on/brampton/?rcp=15&rcs=0&srt=3&prx=100&prv=Ontario&loc=Brampton&kwd=Payment2%2BAutomation&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch",
+      "paymentConfig": {
+        "paymentFrequency": "Monthly",
+        "financeTerm": "24 months @ 6.99%",
+        "downpayment": "1000",
+        "tradeIn": "200",
+        "salesTax": true
+      },
+      "pricingBreakdown": {
+        "dealerPriceLabel": "Dealer price",
+        "dealerPrice": "$10,000",
+        "financeFeeLabel": "Finance fee",
+        "financeFee": "$400",
+        "interestChargeLabel": "Cost of borrowing",
+        "interestCharge": "$783",
+        "salesTaxLabel": "Sales Taxes",
+        "salesTax": "$1,326",
+        "downPaymentLabel": "Down Payment",
+        "downPayment": "-$1,000",
+        "tradeInLabel": "Trade-in",
+        "tradeIn": "-$200",
+        "totalObligationLabel": "Total obligation",
+        "totalObligation": "$12,509",
+        "yourEstimateLabel": "Your estimated payment",
+        "yourEstimate": "$471",
+        "yourEstimateFequency": "monthly*"
+      }
+    },
+    "FR": {
+      "OldCarUrl": "cars/ac/aceca/on/brampton/?rcp=15&rcs=0&srt=3&prx=100&prv=Ontario&loc=Brampton&kwd=Payment2%2BAutomation&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch",
+      "paymentConfig": {
+        "paymentFrequency": "Mensuel",
+        "financeTerm": "24 mois",
+        "downpayment": "1000",
+        "tradeIn": "200",
+        "salesTax": true
+      },
+      "pricingBreakdown": {
+        "dealerPriceLabel": "Prix de vente",
+        "dealerPrice": "10 000 $",
+        "financeFeeLabel": "Frais de financement",
+        "financeFee": "400 $",
+        "interestChargeLabel": "Coût d’emprunt",
+        "interestCharge": "783 $",
+        "salesTaxLabel": "Taxes de vente",
+        "salesTax": "1 326 $",
+        "downPaymentLabel": "Acompte",
+        "downPayment": "-1 000 $",
+        "tradeInLabel": "Valeur d’échange",
+        "tradeIn": "-200 $",
+        "totalObligationLabel": "Obligation totale",
+        "totalObligation": "12 509 $",
+        "yourEstimateLabel": "Votre paiement estimatif",
+        "yourEstimate": "471 $",
+        "yourEstimateFequency": "mensuel*"
+      }
+    }
+  },
+  "6892": {
+    "EN": {
+      "NewCarUrl": "go/5-29861128",
+      "pricingBreakdown": {
+        "msrpLabel": "MSRP",
+        "msrp": "$31,000",
+        "interestChargeLabel": "Cost of borrowing",
+        "interestCharge": "$12",
+        "totalObligationLabel": "Total obligation",
+        "totalObligation": "$31,012",
+        "yourEstimateLabel": "Your estimated payment",
+        "yourEstimate": "$149 bi-weekly*",
+        "yourEstimateFequency": "bi-weekly*"
+      }
+    },
+    "FR": {
+      "NewCarUrl": "go/5-29861128",
+      "pricingBreakdown": {
+        "msrpLabel": "PDSF",
+        "msrp": "31 000 $",
+        "interestChargeLabel": "Coût d’emprunt",
+        "interestCharge": "12 $",
+        "totalObligationLabel": "Obligation totale",
+        "totalObligation": "31 012 $",
+        "yourEstimateLabel": "Votre paiement estimatif",
+        "yourEstimate": "149 $ aux deux-semaines*",
+        "yourEstimateFequency": "aux deux-semaines*"
+      }
+    }
+  },
+  "6849": {
+    "EN": {
+      "NewCarUrl": "go/5-29861128",
+      "paymentConfig": {
+        "paymentFrequency": "Monthly",
+        "financeTerm": "84 months @ 0.05%",
+        "downpayment": "1000",
+        "tradeIn": "20000"
+      },
+      "paymentLeadForm": {
+        "pricingBreakdown": {
+          "msrpLabel": "MSRP",
+          "msrp": "$31,000",
+          "interestChargeLabel": "Cost of borrowing",
+          "interestCharge": "$18",
+          "downPaymentLabel": "Down Payment",
+          "downPayment": "-$1,000",
+          "tradeInLabel": "Trade-in",
+          "tradeIn": "-$20000",
+          "totalObligationLabel": "Total obligation",
+          "totalObligation": "$31,018",
+          "yourEstimate": "$119",
+          "yourEstimateFequency": "monthly*",
+          "financeTerm": "84 months @ 0.05%"
+        },
+        "summaryDisclaimer": "*Welcome to Autotrader. On Approved Credit. Taxes are not included in listing price. Please confirm accuracy of information with seller. Mileage recorded at time of listing. The effective interest rate is equal to",
+        "nameLabel": "Name*",
+        "emailLabel": "Email*",
+        "phoneNumberLabel": "Phone Number",
+        "getPriceAlert": "Get price alerts and new listings for this search right in your inbox.",
+        "submitButton": "Submit",
+        "formDisclaimer": "By clicking \"Submit\" I agree to receive communications from AutoTrader. I can unsubscribe at anytime. I also agree to the Terms of Use and Privacy Policy."
+      }
+
+    },
+    "FR": {
+      "NewCarUrl": "go/5-29861128",
+      "paymentConfig": {
+        "paymentFrequency": "Mensuel",
+        "financeTerm": "84 mois",
+        "downpayment": "1000",
+        "tradeIn": "20000"
+      },
+      "paymentLeadForm": {
+        "pricingBreakdown": {
+          "msrpLabel": "PDSF",
+          "msrp": "31 000 $",
+          "interestChargeLabel": "Coût d’emprunt",
+          "interestCharge": "18 $",
+          "downPaymentLabel": "Acompte",
+          "downPayment": "-1 000 $",
+          "tradeInLabel": "Valeur d’échange",
+          "tradeIn": "-20 00 $",
+          "totalObligationLabel": "Obligation totale",
+          "totalObligation": "31 018 $",
+          "yourEstimate": "119 $",
+          "yourEstimateFequency": "mensuel*",
+          "financeTerm": "84 mois @ 0,05 %"
+        },
+        "summaryDisclaimer": "*Welcome to Autotrader. Sur approbation de crédit. Taxes en sus.Veuillez confirmer l’exactitude des renseignements publiés auprès du vendeur. Le kilométrage indiqué est la valeur au moment de la publication de l’annonce. Le taux d'intérêt effectif est égal à",
+        "nameLabel": "Nom*",
+        "emailLabel": "Courriel*",
+        "phoneNumberLabel": "Téléphone",
+        "getPriceAlert": "Soyez alerté par courriel des baisses de prix ou des nouvelles annonces correspondant à vos critères.",
+        "submitButton": "Soumettre",
+        "formDisclaimer": "En cliquant sur « Soumettre », j’accepte de recevoir des communications d’AutoHebdo. Je prends note que je peux me désabonner en tout temps. J’accepte aussi les Conditions d’utilisation et la Politique de confidentialité."
+      }
+
+    }
+  },
+  "6850": {
+    "EN": {
+      "NewCarUrl": "go/5-29861128",
+      "paymentConfig": {
+        "paymentFrequency": "Monthly",
+        "financeTerm": "84 months @ 0.05%",
+        "downpayment": "1000",
+        "tradeIn": "20000"
+      },
+      "paymentLeadForm": {
+        "name": "QA Test",
+        "email": "maulik.patel2@trader.ca",
+        "phoneNumber": "1111111111",
+        "message": "Payment2 lead message",
+        "getPriceAlertChkbox": true
+      },
+      "thankYouModal": {
+        "heading": "Thank you!",
+        "message": "A representative from Do Not Update Payment2 Automation\r\nwill contact you shortly.",
+        "finishButton": "Finish"
+      }
+    },
+    "FR": {
+      "NewCarUrl": "go/5-29861128",
+      "paymentConfig": {
+        "paymentFrequency": "Mensuel",
+        "financeTerm": "84 mois",
+        "downpayment": "1000",
+        "tradeIn": "20000"
+      },
+      "paymentLeadForm": {
+        "name": "QA Test",
+        "email": "maulik.patel2@trader.ca",
+        "phoneNumber": "1111111111",
+        "message": "Payment2 lead message",
+        "getPriceAlertChkbox": true
+      },
+      "thankYouModal": {
+        "heading": "Merci!",
+        "message": "Un représentant de Do Not Update Payment2 Automation\r\nvous contactera sous peu.",
+        "finishButton": "Terminer"
+      }
+    }
+  },
+  "6861": {
+    "EN": {
+      "OldCarUrl": "go/5-29861128",
+      "tabName": "FINANCE"
+    },
+    "FR": {
+      "OldCarUrl": "go/5-29861128",
+      "tabName": "FINANCEMENT"
+    }
+  },
+  "6862": {
+    "EN": {
+      "NewCarUrl": "go/5-29861128",
+      "paymentConfig": {
+        "paymentFrequency": "Bi-Weekly",
+        "financeTerm": "96 months @ 0.01%",
+        "downpayment": "$0",
+        "tradeIn": "$0",
+        "salesTax": "false"
+      },
+      "pricingBreakdown": {
+        "msrpLabel": "MSRP",
+        "msrp": "$31,000",
+        "interestChargeLabel": "Cost of borrowing",
+        "interestCharge": "$12",
+        "totalObligationLabel": "Total obligation",
+        "totalObligation": "$31,012",
+        "yourEstimateLabel": "Your estimated payment",
+        "yourEstimate": "$149 bi-weekly*",
+        "yourEstimateFequency": "bi-weekly*"
+      },
+      "paymentBottomPanel": {
+        "inquireInfo": "A better finance rate may be available for you!",
+        "disclaimer": "*Welcome to Autotrader. On Approved Credit. Taxes are not included in listing price. Please confirm accuracy of information with seller. Mileage recorded at time of listing. The effective interest rate is equal to 0.83%",
+        "inquireNowButton": "Inquire now"
+      }
+
+    },
+    "FR": {
+      "NewCarUrl": "go/5-29861128",
+      "paymentConfig": {
+        "paymentFrequency": "Aux deux-semaines",
+        "financeTerm": "96 mois @ 0,01 %",
+        "downpayment": "0 $",
+        "tradeIn": "0 $",
+        "salesTax": "false"
+      },
+      "pricingBreakdown": {
+        "msrpLabel": "PDSF",
+        "msrp": "31 000 $",
+        "interestChargeLabel": "Coût d’emprunt",
+        "interestCharge": "12 $",
+        "totalObligationLabel": "Obligation totale",
+        "totalObligation": "31 012 $",
+        "yourEstimateLabel": "Votre paiement estimatif",
+        "yourEstimate": "149 $ aux deux-semaines*",
+        "yourEstimateFequency": "aux deux-semaines*"
+      },
+      "paymentBottomPanel": {
+        "inquireInfo": "Vous pourriez être admissible à un taux encore plus avantageux!",
+        "disclaimer": "*Welcome to Autotrader. Sur approbation de crédit. Taxes en sus.Veuillez confirmer l’exactitude des renseignements publiés auprès du vendeur. Le kilométrage indiqué est la valeur au moment de la publication de l’annonce. Le taux d'intérêt effectif est égal à 0,83 %",
+        "inquireNowButton": "Renseignez-vous maintenant"
+      }
+    }
+  },
+  "6857": {
+    "EN": {
+      "OldCarUrl": "go/5-29901242",
+      "paymentConfig": {
+        "paymentFrequency": "Bi-Weekly",
+        "financeTerm": "36 months @ 6.99%",
+        "downpayment": "$0",
+        "tradeIn": "$0",
+        "salesTax": "false"
+      },
+      "pricingBreakdown": {
+        "dealerPriceLabel": "Dealer price",
+        "dealerPrice": "$10,000",
+        "financeFeeLabel": "Finance fee",
+        "financeFee": "$400",
+        "interestChargeLabel": "Cost of borrowing",
+        "interestCharge": "$1,142",
+
+        "totalObligationLabel": "Total obligation",
+        "totalObligation": "$11,542",
+        "yourEstimateLabel": "Your estimated payment",
+        "yourEstimate": "$148 bi-weekly*",
+        "yourEstimateFequency": "bi-weekly*"
+      }
+    },
+    "FR": {
+      "OldCarUrl": "go/5-29901242",
+      "paymentConfig": {
+        "paymentFrequency": "Aux deux-semaines",
+        "financeTerm": "36 mois @ 6,99 %",
+        "downpayment": "0 $",
+        "tradeIn": "0 $",
+        "salesTax": "false"
+      },
+      "pricingBreakdown": {
+        "dealerPriceLabel": "Prix de vente",
+        "dealerPrice": "10 000 $",
+        "financeFeeLabel": "Frais de financement",
+        "financeFee": "400 $",
+        "interestChargeLabel": "Coût d’emprunt",
+        "interestCharge": "1 142 $",
+
+        "totalObligationLabel": "Obligation totale",
+        "totalObligation": "11 542 $",
+        "yourEstimateLabel": "Votre paiement estimatif",
+        "yourEstimate": "148 $ aux deux-semaines*",
+        "yourEstimateFequency": "aux deux-semaines*"
+      }
+
+    }
+
+  },
+  "6869": {
+    "EN": {
+      "OldCarUrl": "go/5-29901242",
+      "paymentConfig": {
+        "paymentFrequency": "Weekly",
+        "financeTerm": "24 months @ 6.99%",
+        "downpayment": "5000",
+        "tradeIn": "7000",
+        "tradeInHigherThanTotal": "12000",
+        "downpaymentHigherThanTotal": "12000"
+      },
+      "financingNotNeeded": "Financing not needed"
+    },
+    "FR": {
+      "OldCarUrl": "go/5-29901242",
+      "paymentConfig": {
+        "paymentFrequency": "Hebdomadaire",
+        "financeTerm": "24 mois",
+        "downpayment": "5000",
+        "tradeIn": "7000",
+        "tradeInHigherThanTotal": "12000",
+        "downpaymentHigherThanTotal": "12000"
+      },
+      "financingNotNeeded": "Financement non requis"
+    }
+  },
+  "6893": {
+    "EN": {
+      "CPOUrl": "go/5-29906750",
+      "pricingBreakdown": {
+        "dealerPriceLabel": "Dealer price",
+        "dealerPrice": "$19,000",
+        "interestChargeLabel": "Cost of borrowing",
+        "interestCharge": "$3,539",
+        "totalObligationLabel": "Total obligation",
+        "totalObligation": "$22,539",
+        "yourEstimateLabel": "Your estimated payment",
+        "yourEstimate": "$173 bi-weekly*",
+        "yourEstimateFequency": "bi-weekly*"
+      }
+    },
+    "FR": {
+      "CPOUrl": "go/5-29906750",
+      "pricingBreakdown": {
+        "dealerPriceLabel": "Prix de vente",
+        "dealerPrice": "19 000 $",
+        "interestChargeLabel": "Coût d’emprunt",
+        "interestCharge": "3 539 $",
+        "totalObligationLabel": "Obligation totale",
+        "totalObligation": "22 539 $",
+        "yourEstimateLabel": "Votre paiement estimatif",
+        "yourEstimate": "173 $ aux deux-semaines*",
+        "yourEstimateFequency": "aux deux-semaines*"
+      }
+    }
+  },
+  "11065": {
+    "EN": {
+      "NewCarUrl": "go/5-30251390",
+      "paymentConfig": {
+        "salesTax": true
+      },
+      "paymentLeadForm": {
+        "pricingBreakdown": {
+          "federalLuxuryTaxLabel": "Federal Luxury Tax (Based on MSRP)",
+          "federalLuxuryTax": "$10,000"
+        }
+      }
+    },
+    "FR": {
+      "NewCarUrl": "go/5-30251390",
+      "paymentConfig": {
+        "salesTax": true
+      },
+      "paymentLeadForm": {
+        "pricingBreakdown": {
+          "federalLuxuryTaxLabel": "Taxe de luxe fédérale (selon le PDSF)",
+          "federalLuxuryTax": "10 000 $"
+        }
+      }
+    }
+  },
+  "7120": {
+    "flyoutTitleEn": "Buy Online with AutoTrader",
+    "flyoutTitleFr": "Acheter en ligne avec AutoHebdo",
+    "adId": "29908419"
+  },
+  "7122": {
+    "buyersHubTitleEn": "Buy Your Next Car Online",
+    "buyersHubTitleFr": "Achetez votre prochain véhicule en ligne",
+    "adId": "29908419"
+  },
+  "7600": {
+    "EN": {
+      "YoutubeADsUrl": "a/toyota/4runner/toronto/ontario/5_30013370",
+      "YoutubeID": "Qosn4eE4NAM"
+    },
+    "FR": {
+      "YoutubeADsUrl": "go/5-30013370",
+      "YoutubeID": "Qosn4eE4NAM"
+    }
+  },
+  "7615": {
+    "EN": {
+      "YoutubeADsUrl": "go/5-28956253",
+      "YoutubeID": "cKLww60mY1A"
+    },
+    "FR": {
+      "YoutubeADsUrl": "go/5-28956253",
+      "YoutubeID": "cKLww60mY1A"
+    }
+  },
+  "7532": {
+    "EN": {
+      "srpUrlBoost": "cars/bc/vancouver/?rcp=0&rcs=0&prx=100&prv=British+Columbia&loc=Vancouver&hprc=True&wcp=True&sts=New-Used&inMarket=basicSearch&showpoint=1"
+    },
+    "FR": {
+      "srpUrlBoost": "autos/on/brampton/?rcp=15&rcs=0&srt=35&prx=25&prv=Ontario&loc=L6T4N5&kwd=Mobile%2BBoost%2BAll&hprc=True&wcp=True&sts=Neuf-Occasion&showpoint=1"
+    }
+  },
+  "7533": {
+    "EN": {
+      "srpUrlBoost": "cars/on/etobicoke/?rcp=0&rcs=0&srt=35&prx=100&prv=Ontario&loc=M9C5J1&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=basicSearch&showpoint=1",
+      "boostDefaultSortType": "Default"
+    },
+    "FR": {
+      "srpUrlBoost": "autos/on/etobicoke/?rcp=0&rcs=0&srt=35&prx=100&prv=Ontario&loc=M9C5J1&hprc=True&wcp=True&iosp=True&sts=Neuf-Occasion&showpoint=1",
+      "boostDefaultSortType": "Défaut"
+    }
+  },
+  "6009": {
+    "Urls": {
+      "pvUrl": "go/5-30102743",
+      "cnrUrl": "go/5-30107333"
+    },
+    "Name": "MP MakeAnOfferLeadTest",
+    "Message": "This is Make An Offer from Marketplace Web Automation",
+    "MyOffer": "50,000"
+  },
+  "5842": {
+    "Urls": {
+      "pvUrl": "go/5-28815959",
+      "cnrUrl": "go/5-29270001"
+    },
+    "Name": "MP BookAnAppointmentLeadTest",
+    "Message": "This is Book An Appointment from Marketplace Web Automation"
+  },
+  "61156": {
+    "Urls": {
+      "pvTraditionalUrl": "go/5-30515438",
+      "pvHybridUrl": "go/5-28782210",
+      "pvVirtualUrl": "go/5-30535726",
+      "cnrUrl": "go/5-29270001"
+    },
+    "Name": "MP NewLeadFormTest",
+    "Message": "This is Test from Marketplace Web Automation"
+  },
+
+
+  "6061": {
+    "Urls": {
+      "pvUrl": "go/5-29618378",
+      "cnrUrl": "go/5-28898314"
+    },
+    "Name": "MP Delivery Lead Test",
+    "MessageEN": "This is Book A Delivery Lead from Marketplace Web Automation",
+    "MessageFR": "Il s'agit de Book A Delivery Lead de Marketplace Web Automation"
+  },
+
+  "8092": {
+    "EN": {
+      "SRPLinkUrl": "cars/bc/north%20vancouver/?rcp=15&rcs=0&srt=11&prx=100&prv=British%20Columbia&loc=North%20Vancouver%2C%20BC&kwd=pacific%2Bhonda&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch"
+    },
+    "FR": {
+      "SRPLinkUrl": "cars/bc/north%20vancouver/?rcp=15&rcs=0&srt=11&prx=100&prv=British%20Columbia&loc=North%20Vancouver%2C%20BC&kwd=pacific%2Bhonda&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch"
+    }
+  },
+
+  "8296": {
+    "EN": {
+      "buyOnline": "home-delivery/",
+      "sellMyCar": "sell-my-car/",
+      "cars/?fuel=Electriccars/?fuel\",": null,
+      "whatMyCarWorth": "valuations/?Icoenabled=true",
+      "editorial": "editorial/",
+      "news&Feature": "editorial/",
+      "autoNews": "editorial/news/",
+      "carCulture": "/editorial/cool/fun-stuff/",
+      "BuySellOwn": "editorial/advice/",
+      "expertReviews": "editorial/expert/",
+      "ownerReviews": "reviews/",
+      "vehicleResearch": "research/",
+      "motorcycleResearch": "motorcycle-research/",
+      "Awards": "awards/",
+      "carPriceIndex": "consumer/price-index/",
+      "carComparisonTool": "research/comparison/"
+    },
+    "FR": {
+      "buyOnline": "livraison-à-domicile/",
+      "sellMyCar": "sell-my-car",
+      "shopElectric": "autos",
+      "whatMyCarWorth": "valuations/?Icoenabled=true",
+      "editorial": "editorial/",
+      "news&Feature": "editorial/",
+      "expertReviews": "editorial/essai-routier/",
+      "ownerReviews": "reviews/",
+      "vehicleResearch": "recherche/",
+      "motorcycleResearch": "recherche-moto/",
+      "Awards": "prix/",
+      "carComparisonTool": "recherche/comparaison/"
+    }
+  },
+
+  "6469": {
+    "EN": {
+      "pvSellerTypeDealerUrl": "go/5-29895600",
+      "pvSellerTypeDealerSRPUrl": "cars/?rcp=15&rcs=0&srt=10&prx=-1&loc=Ontario&hprc=True&wcp=True&sts=New-Used&adtype=Dealer&inMarket=advancedSearch"
+
+    },
+    "FR": {
+      "pvSellerTypeDealerUrl": "go/5-29895600",
+      "pvSellerTypeDealerSRPUrl": "cars/?rcp=15&rcs=0&srt=10&prx=-1&loc=Ontario&hprc=True&wcp=True&sts=New-Used&adtype=Dealer&inMarket=advancedSearch"
+    }
+  },
+
+  "6475": {
+    "EN": {
+      "pvSellerTypePrivaterUrl": "go/19-11999617",
+      "pvSellerTypePrivaterSRPUrl": "cars/on/?rcp=15&rcs=0&srt=10&prx=-2&prv=Ontario&loc=Ontario&hprc=True&wcp=True&sts=New-Used&adtype=Private&inMarket=advancedSearch"
+    },
+    "FR": {
+      "pvSellerTypePrivaterUrl": "go/19-11999617",
+      "pvSellerTypePrivaterSRPUrl": "cars/on/?rcp=15&rcs=0&srt=10&prx=-2&prv=Ontario&loc=Ontario&hprc=True&wcp=True&sts=New-Used&adtype=Private&inMarket=advancedSearch"
+    }
+  },
+
+  "8869": {
+    "EN": {
+      "pvSellerTypeOSPrUrl": "go/5-29861302",
+      "pvSellerTypeOSPSRPUrl": "cars/?rcp=15&rcs=0&srt=10&prx=-1&loc=Ontario&hprc=True&wcp=True&iosp=True&sts=New-Used&adtype=iosp&inMarket=advancedSearch"
+    },
+    "FR": {
+      "pvSellerTypeOSPrUrl": "go/5-29861302",
+      "pvSellerTypeOSPSRPUrl": "cars/?rcp=15&rcs=0&srt=10&prx=-1&loc=Ontario&hprc=True&wcp=True&iosp=True&sts=New-Used&adtype=iosp&inMarket=advancedSearch"
+    }
+  },
+  "8300": {
+    "EN": {
+      "cnrSellerTypeDealerUrl": "go/5-29573887",
+      "cnrSellerTypeDealerSRPUrl": "heavy-trucks/all/?rcp=15&rcs=0&srt=10&yRng=2017%2C&prx=-1&loc=Ontario&hprc=False&wcp=False&iosp=True&sts=New-Used&adtype=Dealer&showcpo=1&inMarket=advancedSearch"
+    },
+    "FR": {
+      "cnrSellerTypeDealerUrl": "go/5-29573887",
+      "cnrSellerTypeDealerSRPUrl": "heavy-trucks/all/?rcp=15&rcs=0&srt=10&yRng=2017%2C&prx=-1&loc=Ontario&hprc=False&wcp=False&iosp=True&sts=New-Used&adtype=Dealer&showcpo=1&inMarket=advancedSearch"
+    }
+  },
+
+
+  "8301": {
+    "EN": {
+      "cnrSellerTypePrivateUrl": "go/5-29934298",
+      "cnrSellerTypePrivateSRPUrl": "rv/all/?rcp=15&rcs=0&srt=10&prx=-1&loc=Ontario&hprc=False&wcp=False&iosp=True&sts=New-Used&adtype=Private&showcpo=1&inMarket=advancedSearch"
+    },
+    "FR": {
+      "cnrSellerTypePrivateUrl": "go/5-29934298",
+      "cnrSellerTypePrivateSRPUrl": "rv/all/?rcp=15&rcs=0&srt=6&prx=-1&loc=Ontario&hprc=False&wcp=False&iosp=True&sts=New-Used&adtype=Private&showcpo=1&inMarket=advancedSearch"
+    }
+  },
+  "8467": {
+    "EN": {
+      "srpUrl": "cars/lincoln/on/?rcp=15&rcs=0&srt=3&prx=-2&prv=Ontario&loc=M9C5J1&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch"
+    },
+    "FR": {
+      "srpUrl": "autos/lincoln/on/?rcp=15&rcs=0&srt=4&prx=-2&prv=Ontario&loc=M9C5J1&hprc=True&wcp=True&iosp=True&sts=Neuf-Occasion"
+    }
+  },
+
+  "8468": {
+    "EN": {
+      "srpUrl": "heavy-trucks/all/on/?rcp=0&rcs=0&srt=3&prx=-2&prv=Ontario&loc=L4X%202M8&hprc=False&wcp=False&iosp=True&sts=New-Used&inMarket=basicSearch&showcpo=1"
+    },
+    "FR": {
+      "srpUrl": "camion-lourd/all/on/?rcp=15&rcs=0&srt=3&prx=-2&prv=Ontario&loc=L4X%202M8&hprc=False&wcp=False&iosp=True&sts=Neuf-Occasion"
+    }
+  },
+  "6821": {
+    "srpUrlNonEnhancedListing": "cars/on/scarborough/?rcp=15&rcs=0&srt=3&prx=100&prv=Ontario&loc=M1K%204J3&kwd=NonEnhancedListings&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch&atOptUser=eff35d88-91f4-4e40-8857-445a3ce657d8",
+    "mainImageWidth": 178,
+    "mainImageHeight": 133,
+    "stripeImageWidth": 78,
+    "stripeImageHeight": 58,
+    "mainImageWidthXS": 81,
+    "mainImageHeightXS": 71
+  },
+  "6910": {
+    "srpUrlNonEnhancedListing": "cars/on/scarborough/?rcp=15&rcs=0&srt=3&prx=100&prv=Ontario&loc=M1K%204J3&kwd=NonEnhancedListings&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch&atOptUser=eff35d88-91f4-4e40-8857-445a3ce657d8",
+    "mainImageWidth": 178,
+    "mainImageHeight": 133,
+    "mainImageWidthXS": 81,
+    "mainImageHeightXS": 71
+  },
+  "6914": {
+    "srpUrlNonEnhancedListing": "cars/on/scarborough/?rcp=15&rcs=0&srt=3&prx=100&prv=Ontario&loc=M1K%204J3&kwd=NonEnhancedListings&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch&atOptUser=eff35d88-91f4-4e40-8857-445a3ce657d8",
+    "mainImageWidth": 178,
+    "mainImageHeight": 133
+  },
+  "6911": {
+    "srpUrlNonEnhancedListing": "cars/on/scarborough/?rcp=15&rcs=0&srt=3&prx=100&prv=Ontario&loc=M1K%204J3&kwd=NonEnhancedListings&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch&atOptUser=eff35d88-91f4-4e40-8857-445a3ce657d8",
+    "mainImageWidth": 178,
+    "mainImageHeight": 133,
+    "stripeImageWidth": 78,
+    "stripeImageHeight": 58,
+    "mainImageWidthXS": 81,
+    "mainImageHeightXS": 81
+  },
+  "6929": {
+    "srpUrlNonEnhancedListing": "cars/on/scarborough/?rcp=15&rcs=0&srt=3&prx=100&prv=Ontario&loc=M1K%204J3&kwd=NonEnhancedListings&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch&atOptUser=eff35d88-91f4-4e40-8857-445a3ce657d8",
+    "mainImageWidth": 131,
+    "mainImageHeight": 98,
+    "stripeImageWidth": 78,
+    "stripeImageHeight": 58
+  },
+  "8557": {
+    "srpUrlNonEnhancedListing": "cars/on/scarborough/?rcp=15&rcs=0&srt=3&prx=100&prv=Ontario&loc=M1K%204J3&kwd=NonEnhancedListings&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch&atOptUser=eff35d88-91f4-4e40-8857-445a3ce657d8",
+    "mainImageWidth": 131,
+    "mainImageHeight": 98,
+    "mainImageWidthXS": 81,
+    "mainImageHeightXS": 81
+  },
+  "6930": {
+    "srpUrlEnhancedListing": "cars/on/scarborough/?rcp=15&rcs=0&srt=3&prx=100&prv=Ontario&loc=M1K%204J3&kwd=NonEnhancedListings&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch",
+    "mainImageWidth": 180,
+    "mainImageHeight": 135,
+    "stripeImageWidth": 86,
+    "stripeImageHeight": 60,
+    "mainImageWidthXS": 132,
+    "mainImageHeightXS": 99
+  },
+  "8554": {
+    "srpUrlEnhancedListing": "cars/on/scarborough/?rcp=15&rcs=0&srt=3&prx=100&prv=Ontario&loc=M1K%204J3&kwd=NonEnhancedListings&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch",
+    "mainImageWidth": 180,
+    "mainImageHeight": 135,
+    "mainImageWidthXS": 132,
+    "mainImageHeightXS": 99
+  },
+  "8556": {
+    "srpUrlEnhancedListing": "cars/on/scarborough/?rcp=15&rcs=0&srt=3&prx=100&prv=Ontario&loc=M1K%204J3&kwd=NonEnhancedListings&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch",
+    "mainImageWidth": 180,
+    "mainImageHeight": 135,
+    "mainImageWidthXS": 132,
+    "mainImageHeightXS": 99
+  },
+  "8555": {
+    "srpUrlEnhancedListing": "cars/on/scarborough/?rcp=15&rcs=0&srt=3&prx=100&prv=Ontario&loc=M1K%204J3&kwd=NonEnhancedListings&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch",
+    "mainImageWidth": 180,
+    "mainImageHeight": 135,
+    "stripeImageWidth": 86,
+    "stripeImageHeight": 60,
+    "mainImageWidthXS": 132,
+    "mainImageHeightXS": 99
+  },
+  "8558": {
+    "srpUrlEnhancedListing": "cars/on/scarborough/?rcp=15&rcs=0&srt=3&prx=100&prv=Ontario&loc=M1K%204J3&kwd=NonEnhancedListings&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch",
+    "mainImageWidth": 133,
+    "mainImageHeight": 100,
+    "stripeImageWidth": 86,
+    "stripeImageHeight": 60
+  },
+  "8559": {
+    "srpUrlEnhancedListing": "cars/on/scarborough/?rcp=15&rcs=0&srt=3&prx=100&prv=Ontario&loc=M1K%204J3&kwd=NonEnhancedListings&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch",
+    "mainImageWidth": 133,
+    "mainImageHeight": 100,
+    "mainImageWidthXS": 132,
+    "mainImageHeightXS": 99
+  },
+  "8056": {
+    "EN": {
+      "preQualUrl": "a/saab/900/mississauga/ontario/5_28688321_20160628231700642/",
+      "preQualConfig": {
+        "firstName": "Molly",
+        "lastName": "Gleen",
+        "phoneNumber": 6044444444,
+        "addressLine1": "Gleen",
+        "addressLine2": "Valza",
+        "city": "Toronto",
+        "province": "Ontario",
+        "postalCode": "L4Z0A9",
+        "vehiclePayments": 3000,
+        "housingPayments": 300
+      }
+    },
+    "FR": {
+      "preQualUrl": "a/saab/900/mississauga/ontario/5_28688321_20160628231700642/"
+
+    }
+  },
+  "11070": {
+    "EN": {
+      "srpUrl": "cars/mazda/mazda3/on/kitchener/?rcp=15&rcs=0&srt=3&prx=100&prv=Ontario&loc=N2G%204G7&kwd=Virtual%2BPackage%2BAutomation&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch",
+      "virtualAdId": "5_30161565",
+      "hybridAdId": "5_30161569",
+      "traditionalAdId": "5_30161017",
+      "virtualProximityText": "online only",
+      "hybridProximityText": "toronto∙ 93 km + delivery available",
+      "traditionalProximityText": "toronto∙ 93 km",
+      "virtualProximityTextXS": "online only",
+      "hybridProximityTextXS": "within 93 km + delivery",
+      "traditionalProximityTextXS": "within 93 km"
+    },
+    "FR": {
+      "srpUrl": "autos/mazda/mazda3/on/kitchener/?rcp=15&rcs=0&srt=3&prx=100&prv=Ontario&loc=N2G%204G7&kwd=Virtual%2BPackage%2BAutomation&hprc=True&wcp=True&iosp=True&sts=Neuf-Occasion",
+      "virtualAdId": "5_30161565",
+      "hybridAdId": "5_30161569",
+      "traditionalAdId": "5_30161017",
+      "virtualProximityText": "uniquement en ligne",
+      "hybridProximityText": "toronto∙ 93 km + livraison disponible",
+      "traditionalProximityText": "toronto∙ 93 km",
+      "virtualProximityTextXS": "uniquement en ligne",
+      "hybridProximityTextXS": "rayon de 93 km + livraison",
+      "traditionalProximityTextXS": "à 93 km"
+    }
+  },
+  "10404": {
+    "virtualAdUrl": "go/5-30161565"
+  },
+  "10405": {
+    "hybridAdUrl": "go/5-30161569",
+    "hybridAdAddress": "1 Toronto Street , Toronto, ON M5C 2V6"
+  },
+  "10406": {
+    "traditionalAdUrl": "go/5-30161017",
+    "traditionalAdAddress": "1 Toronto Street , Toronto, ON"
+  },
+  "10625": {
+    "EN": {
+      "srpUrl": "cars/audi/a6/on/toronto/?rcp=15&rcs=0&srt=35&prx=100&prv=Ontario&loc=toronto&kwd=spintest&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch"
+    },
+    "FR": {
+      "srpUrl": "cars/audi/a6/on/toronto/?rcp=15&rcs=0&srt=35&prx=100&prv=Ontario&loc=toronto&kwd=spintest&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch"
+    }
+  },
+  "10626": {
+    "EN": {
+      "srpUrl": "cars/audi/a6/on/toronto/?rcp=15&rcs=0&srt=35&prx=100&prv=Ontario&loc=toronto&kwd=spintest&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch",
+      "seeInsideButton": "See Inside"
+    },
+    "FR": {
+      "srpUrl": "cars/audi/a6/on/toronto/?rcp=15&rcs=0&srt=35&prx=100&prv=Ontario&loc=toronto&kwd=spintest&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch",
+      "seeInsideButton": "Voir l'intérieur"
+    }
+  },
+  "10632": {
+    "EN": {
+      "srpUrl": "cars/audi/a6/on/toronto/?rcp=15&rcs=0&srt=35&prx=100&prv=Ontario&loc=toronto&kwd=spintest&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch",
+      "spinWidgetText": "Sit in the drivers seat with our 360° view"
+    },
+    "FR": {
+      "srpUrl": "cars/audi/a6/on/toronto/?rcp=15&rcs=0&srt=35&prx=100&prv=Ontario&loc=toronto&kwd=spintest&hprc=True&wcp=True&iosp=True&sts=New-Used&inMarket=advancedSearch",
+      "spinWidgetText": "Installez-vous à la place du conducteur grâce à notre vue à 360°"
+    }
+  },
+  "11466": {
+    "featureSSO": {
+      "userNameWnEN": "TradeSocialCAT@gmail.com",
+      "userNameWnFR": "TradeSocialCATFR@gmail.com",
+      "userNameAnEN": "TradeSocialCATXSEN@gmail.com",
+      "userNameAnFR": "TradeSocialCATXSFR@gmail.com",
+      "password": "AutoTraderA@2023",
+      "defaultFirstName": "John",
+      "defaultLastName": "Alex",
+      "defaultpostcode": "L6T4N5",
+      "defaultphoneNumber": "4222222222",
+      "updatedFirstName": "JohnX",
+      "updatedLastName": "AlexX",
+      "updatePostcode": "L6T2E6",
+      "updatePhoneNumber": "4333333333"
+    }
+  },
+  "11443": {
+    "userName": "traderqaauto713@gmail.com",
+    "password": "localAutoTrader@2023",
+    "passwordFB": "AutoTrader@2023",
+    "defaultFirstName": "Trader",
+    "defaultLastName": "QAauto",
+    "defaultpostcode": "L6T4N5",
+    "defaultphoneNumber": "4222222222",
+    "updatedFirstName": "TraderX",
+    "updatedLastName": "QAautoX",
+    "updatePostcode": "L6T2E6",
+    "updatePhoneNumber": "4333333333"
+  },
+  "10974": {
+    "userName1": "autotrader2023updatepwdcat@gmail.com",
+    "userName2": "atupdatepass@tradernewssoreg.testinator.com",
+    "userName3": "changepassupdate@tradernewssoreg.testinator.com",
+    "passwordA": "AutoTraderA@2023",
+    "passwordB": "AutoTraderB@2023",
+    "FirstName": "TraderX",
+    "LastName": "QAAutomationX",
+    "Postcode": "L6T2E6",
+    "PhoneNumber": "4333333333"
+  },
+  "10951": {
+    "mailinatorInbox1": "tradersso11",
+    "mailinatorInbox2": "tradersso12",
+    "mailinatorInbox3": "tradersso13"
+  },
+  "10973": {
+    "userNameWnEN": "CATAccounts001@mailinator.com",
+    "userNameWnFR": "CATAccounts002@mailinator.com",
+    "userNameAnEN": "CATAccounts003@mailinator.com",
+    "userNameAnFR": "CATAccounts004@mailinator.com",
+    "password": "AutoTraderA@2023",
+    "defaultFirstName": "Trader",
+    "defaultLastName": "Automation",
+    "defaultpostcode": "L6T4N5",
+    "defaultphoneNumber": "4222222222",
+    "updatedFirstName": "TraderX",
+    "updatedLastName": "AutomationX",
+    "updatePostcode": "L6T2E6",
+    "updatePhoneNumber": "4333333333"
+  },
+  "11361": {
+    "EN": {
+      "srpURL": "cars/ford/f-150/on/scarborough/?rcp=15&rcs=0&srt=35&pRng=%2C50000&prx=100&prv=Ontario&loc=M1K4J3&hprc=True&wcp=True&sts=New-Used",
+      "searchName": "new, used & certified pre-owned Ford F-150 vehicles, under $50,000 for sale"
+    },
+    "FR": {
+      "srpURL": "autos/ford/f-150/on/scarborough/?rcp=15&rcs=0&srt=35&pRng=%2C50000&prx=100&prv=Ontario&loc=M1K4J3&hprc=True&wcp=True&sts=Neuf-Occasion",
+      "searchName": "véhicules Ford F-150 neuves, d’occasion et d’occasion certifiés, moins de 50 000 $ à vendre"
+    }
+  },
+  "11384": {
+    "EN": {
+      "srpURL": "cars/ram/1500/on/scarborough/?rcp=15&rcs=0&srt=35&pRng=%2C50000&prx=100&prv=Ontario&loc=M1K4J3&hprc=True&wcp=True&sts=New-Used",
+      "searchName": "new, used & certified pre-owned Ram 1500 vehicles, under $50,000 for sale"
+    },
+    "FR": {
+      "srpURL": "autos/ram/1500/on/scarborough/?rcp=15&rcs=0&srt=35&pRng=%2C50000&prx=100&prv=Ontario&loc=M1K4J3&hprc=True&wcp=True&sts=Neuf-Occasion",
+      "searchName": "véhicules Ram 1500 neuves, d’occasion et d’occasion certifiés, moins de 50 000 $ à vendre"
+    }
+  },
+  "11489": {
+    "makeCriteria": "Toyota",
+    "modelCriteria": "Camry",
+    "localAccountEmail1": "catprolific@gmail.com",
+    "localAccountEmail2": "catchbugman@gmail.com",
+    "localAccountEmail3": "gcatusermail@gmail.com",
+    "EN": {
+      "srpURL": "cars/toyota/camry/on/mississauga/?rcp=15&rcs=0&srt=35&pRng=%2C50000&prx=100&prv=Ontario&loc=L4Z3K9&hprc=True&wcp=True&sts=New-Used",
+      "searchName": "new, used & certified pre-owned Toyota Camry vehicles, under $50,000 for sale"
+    },
+    "FR": {
+      "srpURL": "autos/toyota/camry/on/mississauga/?rcp=15&rcs=0&srt=35&pRng=%2C50000&prx=100&prv=Ontario&loc=L4Z3K9&hprc=True&wcp=True&sts=Neuf-Occasion",
+      "searchName": "véhicules Toyota Camry neuves, d’occasion et d’occasion certifiés, moins de 50 000 $ à vendre"
+    }
+  },
+
+  "11440": {
+    "makeCriteria": "Kia",
+    "modelCriteria": "Forte",
+    "newSearchName": "My favorite Kia list",
+    "localAccountEmail1": "bprodsalefor@gmail.com",
+    "localAccountEmail2": "traderuiautomation2@gmail.com",
+    "localAccountEmail3": "traderuiautomation3@yahoo.com",
+    "EN": {
+      "srpURL": "cars/kia/forte/on/mississauga/?rcp=15&rcs=0&srt=35&prx=100&prv=Ontario&loc=L4Z3K9&hprc=True&wcp=True&sts=Used",
+      "searchName": "used & certified pre-owned Kia Forte vehicles for sale"
+    },
+    "FR": {
+      "srpURL": "autos/kia/forte/on/mississauga/?rcp=15&rcs=0&srt=35&prx=100&prv=Ontario&loc=L4Z3K9&hprc=True&wcp=True&sts=Occasion",
+      "searchName": "véhicules Kia Forte d’occasion et d’occasion certifiés à vendre"
+    }
+  },
+  "11360": {
+    "EN": {
+      "srpURL": "cars/kia/forte/on/mississauga/?rcp=15&rcs=0&srt=35&prx=100&prv=Ontario&loc=L4Z3K9&hprc=True&wcp=True&sts=Used",
+      "searchName": "used & certified pre-owned Kia Forte vehicles for sale"
+    },
+    "FR": {
+      "srpURL": "autos/kia/forte/on/mississauga/?rcp=15&rcs=0&srt=35&prx=100&prv=Ontario&loc=L4Z3K9&hprc=True&wcp=True&sts=Occasion",
+      "searchName": "véhicules Kia Forte d’occasion et d’occasion certifiés à vendre"
+    }
+  },
+  "11442": {
+    "makeCriteria": "Honda",
+    "modelCriteria": "Civic",
+    "EN": {
+      "srpURL": "cars/honda/civic/on/London/?rcp=15&rcs=0&srt=35&pRng=%2C50000&prx=100&prv=Ontario&loc=N5Y5R6&hprc=True&wcp=True&sts=New-Used",
+      "searchName": "new, used & certified pre-owned Honda Civic vehicles, under $50,000 for sale"
+    },
+    "FR": {
+      "srpURL": "autos/honda/civic/on/London/?rcp=15&rcs=0&srt=35&pRng=%2C50000&prx=100&prv=Ontario&loc=N5Y5R6&hprc=True&wcp=True&sts=Neuf-Occasion",
+      "searchName": "véhicules Honda Civic neuves, d’occasion et d’occasion certifiés, moins de 50 000 $ à vendre"
+    }
+  },
+  "12033": {
+    "location": "M1K4J3",
+    "minYear": "2020"
+  },
+  "12035": {
+    "location": "M5C2V6",
+    "EN": {
+      "homeDeliveryTooptipMsg": "Please enter your postal code in order to show cars that can be delivered to you.",
+      "homeDeliveryInfoIconTooptipMsg": "Only show cars that can be delivered to me."
+    },
+    "FR": {
+      "homeDeliveryTooptipMsg": "Veuillez entrer votre code postal afin d'afficher les voitures qui peuvent vous être livrées.",
+      "homeDeliveryInfoIconTooptipMsg": "Afficher uniquement les véhicles qui peuvent être livrées à domicile."
+    }
+  },
+  "11376": {
+    "brandingVideoUrl": "go/5-30302078",
+    "upsItemCounts": 6,
+    "dealerName": "Automation Trader QA - Branding Video & OTL",
+    "visitWebsiteLink": "www.birchwoodbmw.ca",
+    "dealerAddress": "11 Court Silence Ct , New Brunswick, NS",
+    "EN": {
+      "dealershipURLRoute": "/dealership/20230110211007948/"
+    },
+    "FR": {
+      "dealershipURLRoute": "/concessionnaire/20230110211007948/"
+    }
+  },
+  "11377": {
+    "otlEventUrl": "go/5-30301097",
+    "upsItemCounts": 6,
+    "dealerName": "Automation Trader QA - Branding Video & OTL",
+    "visitWebsiteLink": "www.birchwoodbmw.ca",
+    "dealerAddress": "11 Court Silence Ct , New Brunswick, NS",
+    "EN": {
+      "dealershipURLRoute": "/dealership/20230110211007948/"
+    },
+    "FR": {
+      "dealershipURLRoute": "/concessionnaire/20230110211007948/"
+    }
+  },
+  "11378": {
+    "defaultAd": "go/5-28035903",
+    "upsItemCounts": 6,
+    "dealerName": "Birchwood BMW",
+    "visitWebsiteLink": "www.birchwoodbmw.ca",
+    "dealerAddress": "45-3965 Portage Ave. , Winnipeg, MB",
+    "EN": {
+      "dealershipURLRoute": "/dealership/20230110211007948/"
+    },
+    "FR": {
+      "dealershipURLRoute": "/concessionnaire/20230110211007948/"
+    }
+  },
+  "56235": {
+    "payCalcPL": "a/ram/1500%20classic/whitehorse/yukon/5_30834888_20231106163614625/?showcpo=ShowCpo&ncse=no&ursrc=pl&urp=1&urm=8&pc=X0A%200A0&sprx=-1",
+    "payCalcTS": "a/ram/1500%20classic/whitehorse/yukon/5_30834888_20231106163614625/?showcpo=ShowCpo&ncse=no&ursrc=ts&sprx=-1",
+    "payCalcOrganic": "a/hyundai/elantra%20gt/sudbury/ontario/5_29886477_on20080910094346954/?showcpo=ShowCpo&ncse=no&orup=9_15_1048&sprx=-1",
+    "payCalcXPL": "a/ram/1500%20classic/whitehorse/yukon/5_30834888_20231106163614625/?showcpo=ShowCpo&ncse=no&ursrc=xpl&urp=2&urm=5&sprx=-1",
+    "payCalcBoost": "a/jeep/wrangler/whitehorse/yukon/5_30933953_20231106163614625/?showcpo=ShowCpo&ncse=no&ursrc=boost&orup=1_5_5&sprx=-1",
+    "payCalcBoostHL": "a/honda/unspecified/brampton/quebec/5_30610535_20230920161834898/?showcpo=ShowCpo&ncse=no&ursrc=boost_hl&orup=4_15_1048&sprx=-1",
+    "payCalcPPL": "a/honda/unspecified/brampton/quebec/5_30610535_20230920161834898/?showcpo=ShowCpo&ncse=no&ursrc=ppl&sprx=-1"
+  },
+  "61579": {
+    "EN": {
+      "srpUrl": "cars/yt/whitehorse/?rcp=50&rcs=0&srt=35&prx=100&prv=Yukon&loc=whitehorse&hprc=True&wcp=True&hdr=True&sts=New-Used&inMarket=advancedSearch"
+    },
+    "FR": {
+      "srpUrl": "autos/yt/whitehorse/?rcp=50&rcs=0&srt=35&prx=100&prv=Yukon&loc=whitehorse&hprc=True&wcp=True&hdr=True&sts=Neuf-Occasion"
+    }
+  },
+  "56233": {
+    "payCalc": "go/5-30834888"
+  },
+  "59201": {
+    "year": "2021",
+    "make": "Honda",
+    "kilometres": "20000",
+    "editKilometre": "40000",
+    "editTrim": "Touring 4D Sedan",
+    "EN": {
+      "editColour": {
+        "name": "San Marino Red",
+        "rgb": "rgb(135, 0, 40)"
+      }
+    },
+    "FR": {
+      "editColour": {
+        "name": "San Marino Red",
+        "rgb": "rgb(135, 0, 40)"
+      }
+    }
+  },
+  "59202": {
+    "vin": "4T1BF1FK2GU601138",
+    "kilometres": "20000",
+    "editKilometre": "40000",
+    "editTrim": "SE 4D Sedan",
+    "EN": {
+      "editColour": {
+        "name": "Midnight Black Met",
+        "rgb": "rgb(1, 1, 1)"
+      }
+    },
+    "FR": {
+      "editColour": {
+        "name": "Midnight Black Met",
+        "rgb": "rgb(1, 1, 1)"
+      }
+    }
+  },
+  "preQualConfig": {
+    "SuperPrime": {
+      "firstName": "Thomson",
+      "lastName": "Ryan",
+      "dob": "4/4/1980",
+      "addressLine1": "16 MIDLAND PL SE",
+      "city": "CALGARY",
+      "province": "AB",
+      "postalCode": "T2X1P9"
+    },
+    "Prime": {
+      "firstName": "MORRIS",
+      "lastName": "LEN",
+      "dob": "7/1/1988",
+      "addressLine1": "1655 HARO ST",
+      "city": "VANCOUVER",
+      "province": "BC",
+      "postalCode": "V6G1G9"
+    },
+    "NearPrime": {
+      "firstName": "FRENCHIVA",
+      "lastName": "SUNNY",
+      "dob": "1/1/1995",
+      "addressLine1": "123 MONTREAL RUE",
+      "city": "MONTREAL",
+      "province": "QC",
+      "postalCode": "H1M1H9"
+    },
+    "SubPrime": {
+      "firstName": "CHIDLEY",
+      "lastName": "HOLLY",
+      "dob": "9/27/1986",
+      "addressLine1": "8 STEWART HARRIS",
+      "city": "DARTMOUTH",
+      "province": "NS",
+      "postalCode": "B2W5E5"
+    },
+    "DeepSubPrime": {
+      "firstName": "WARES",
+      "lastName": "PACKS",
+      "dob": "10/10/1991",
+      "addressLine1": "68 DROPS RD",
+      "city": "TORONTO",
+      "province": "ON",
+      "postalCode": "M0E3G5"
+    },
+    "ErrorInValidIDV": {
+      "firstName": "Linda",
+      "lastName": "Peterson",
+      "dob": "1/1/1970",
+      "addressLine1": "20 dundas st w",
+      "city": "Toronto",
+      "province": "ON",
+      "postalCode": "M5G2E2"
+    },
+    "ErrorCreditFileNotFound": {
+      "firstName": "RCTEQIJ",
+      "lastName": "ACE",
+      "dob": "5/18/2000",
+      "addressLine1": "68 DROPS RD",
+      "city": "BRAMPTON",
+      "province": "ON",
+      "postalCode": "L6T 4N5"
+    },
+
+    "Expired": {
+      "Email": "prequalprofileexists@mailinator.com",
+      "Password": "LocalCat@2023"
+
+    },
+    "ErrorInvalidKBA": {
+      "firstName": "TestIdaho",
+      "lastName": "Ace",
+      "dob": "9/8/1981",
+      "addressLine1": "622 6 ST S",
+      "city": "Lethbridge",
+      "province": "AB",
+      "postalCode": "T1J2E3"
+    },
+    "IDVMaxLimitReached": {
+      "firstName": "TestIdaho",
+      "lastName": "Ace",
+      "dob": "9/8/1981",
+      "addressLine1": "622 6 ST S",
+      "city": "Lethbridge",
+      "province": "AB",
+      "postalCode": "T1J2E3"
+    },
+    "PreQualDecline": {
+      "firstName": "Ganesh",
+      "lastName": "Dunn",
+      "dob": "1/1/1983",
+      "addressLine1": "100 MCKERCHER DR",
+      "city": "Saskatoon",
+      "province": "SK",
+      "postalCode": "S7H5E2"
+    }
+
+  }
+}
+

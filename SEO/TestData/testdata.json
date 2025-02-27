@@ -1,6 +1,5 @@
 ﻿{
   "urlsEn": {
-
     "editorialHomePage": "editorial/",
     "advicePage": "editorial/advice/",
     "carBuying": "editorial/advice/buying/",
@@ -14,7 +13,7 @@
     "carProductReviews": "editorial/expert/products-reviews/",
     "news": "editorial/news/",
     "coolStuff": "editorial/cool/",
-    "videos": "editorial/autotradertv/",
+    "videos": "editorial/tv/",
     "search": "editorial/search/",
     "funStuff": "editorial/cool/fun-stuff/",
     "carTech": "editorial/cool/car-tech/",
@@ -104,7 +103,6 @@
     "evSRPYearProvCityFr": "",
     "evSRPYearRangeProvCityEn": "",
     "evSRPYearRangeProvCityFr": ""
-
   },
   "linkTextEn": {
 

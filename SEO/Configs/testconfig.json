@@ -1,5 +1,5 @@
 {
-  "TraderUrl": "{WebsiteURLHere}",
+  "WebUrl": "{WebsiteURLHere}",
   "Configuration": "local-chrome-large"
   //"Configuration": "local-chrome-xs"
   //"Configuration": "local-chrome-small"
